@@ -14,7 +14,7 @@ class ChargeProfil{
 			if($query->execute(array("user_id"=>$userId))){
 				$row = $query->fetch();
 				if($row!=null){
-					
+					/* comment test change */
 				}
 
 

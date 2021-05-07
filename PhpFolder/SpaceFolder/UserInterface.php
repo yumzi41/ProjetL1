@@ -2,10 +2,6 @@
 
 \Treatment\PostTreatment::treatment();
 
-$query2 = \Database\Db::getInstance()->prepare("SELECT * FROM users AS u LEFT JOIN imgProfil AS i ON (u.user_id = i.fk_user_id) WHERE user_id = :user_id)");
-
-var_dump($query2->errorInfo());
-
 if(isset($_GET["section"])){
 
 	$section = $_GET["section"];
