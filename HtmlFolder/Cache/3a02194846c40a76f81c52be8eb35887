@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>register</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="../CssFolder/Portal.css">
+</head>
+<body>
+	<div id='' class='divMain'><form class='formRegister' 
+		method='POST' 
+		action='Main.php?space=register'><p class='imgRegisterP'><img src='../Img/icons8-connexion-au-compte-cloud-male-100.png' class='imgRegister'></p><input type='text' 
+		name='registerSurname' 
+		value='Noe' 
+		class='registerSurnameEditText' 
+		placeholder='veuillez entrer votre prenom'
+		patter=
+		required=''/><input type='text' 
+		name='registerName' 
+		value='Ramanan' 
+		class='registerNameEditText' 
+		placeholder='veuillez entrer votre nom'
+		patter=
+		required=''/><input type='text' 
+		name='registerPseudo' 
+		value='yumzi' 
+		class='registerPseudoEditText' 
+		placeholder='veuillez entrer votre pseudo'
+		patter=
+		required=''/><input type='text' 
+		name='registerEmail' 
+		value='slap@gmail.com' 
+		class='registeremailEditText' 
+		placeholder='veuillez entrer votre email'
+		patter=
+		required=''/><input type='password' 
+		name='registerPassword' 
+		value='K2z623pt?' 
+		class='registerPasswordEditText' 
+		placeholder='veuillez entrer votre mot de passe'
+		patter=
+		required=''/><input type='password' 
+		name='registerPasswordConfirm' 
+		value='K2z623pt?' 
+		class='registerPasswordConfirmEditText' 
+		placeholder='veuillez confirmer votre mot de passe'
+		patter=
+		required=''/><input type='submit' 
+		name='registerSubmitButton' 
+		value='Valider' 
+		class='registerSubmitButton' 
+		placeholder=''
+		patter=
+		required=''/><?= $registerResponse ?? ''; ?><a href='Main.php?space=login' class='loginLink'> se connecter. </a> </form></div>
+</body>
+</html>

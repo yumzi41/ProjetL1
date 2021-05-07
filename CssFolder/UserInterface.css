@@ -1,0 +1,194 @@
+body {
+font-family : system-ui;
+background : url("../Img/universite_tours.png") no-repeat fixed;
+display : flex;
+flex-direction : column;
+}
+
+button.buttonVisibleFormNewPost { 
+	position: fixed;
+	right: 1%;
+	bottom : 2%;
+	border-radius : 5px;
+	border : none;
+	font-size: 1.5em;
+	padding : 5px;
+	
+
+}
+
+div.divBottomLeft { 
+	position: fixed;
+	right: 1%;
+	bottom : 2%;
+}
+
+form.formNewPost { 
+	display: grid;
+	background: white;
+	grid-template-rows: 1fr 3fr 1fr;
+	border-radius : 5px;
+	border : none;
+	font-size: 1.5em;
+	padding : 25px;
+	grid-gap: 5px;
+	
+
+}
+
+form.formNewPost button {
+	position: absolute;
+	right: 3%;
+	top : 3%;
+	border-radius : 5px;
+	border : none;
+	background-color: red;
+	color: white;
+	}
+
+form.formNewPost input { 
+
+border : none;
+border-bottom: solid black 1px;
+padding: 2px;
+text-align: center;
+
+}
+
+form.formNewPost textarea { 
+	resize: none; 
+}
+
+.newPostSubmitButton { 
+	width: 70%; 
+	justify-self: center;
+	border : none;
+	border-radius: 5px;
+	background-color: black;
+	color: white;
+	margin: 5px;
+
+}
+
+button:hover { background: black; color: white; }
+
+
+div.divMain {
+display : flex;
+flex-direction : column;
+}
+
+
+div.divNavigationBar {
+flex-direction : row;
+display : flex;
+justify-content : space-around;
+align-items : center;
+padding : 10px;
+border-radius : 45px;
+padding : 10px;
+box-shadow : 0 0 7px;
+background-color : rgb(0, 0, 0, 0.20);
+height : 150px;
+}
+
+
+div.divNavigationBar a {
+font-size : 1.5em;
+text-decoration : none;
+color : rgb(250, 250, 250);
+}
+
+
+div.divSpaceContent {
+display : grid;
+grid-template-columns : 1fr 3fr 1fr;
+grid-gap: 5px;
+}
+
+
+div.navigationBar a:hover {
+color : red;
+}
+
+
+div.divPost {
+display : grid;
+grid-template-columns : 3fr 1fr;
+padding : 20px;
+border-radius : 45px;
+margin : 7px;
+box-shadow : 0 0 7px;
+background-color : rgb(0, 0, 0, 0.20);
+grid-gap : 5px;
+}
+
+
+div.divLeft {
+display : flex;
+flex-direction : column;
+max-height : 300px;
+overflow : auto;
+padding : 5px;
+}
+
+
+div.divLeft p {
+font-size : 1.3em;
+text-decoration : none;
+color : rgb(240, 240, 240);
+
+}
+
+
+div.divRight {
+display : flex;
+flex-direction : column-reverse;
+max-height : 300px;
+width: 99%;
+overflow-y: scroll;
+overflow-x: hidden;
+}
+
+
+div.divRight p {
+font-size : 0.8em;
+}
+
+
+div.divComment {
+display : grid;
+grid-template-areas : " A B" "C C";
+border-bottom : 1px dashed white;
+color : white;
+padding : 5px;
+}
+
+div.divRight div.divComment p.text { 
+font-size: 1em;
+width: 99%;
+word-wrap: break-all;
+overflow-x: visible;
+overflow-y: visible;
+display: block;
+grid-area: C;
+text-overflow: ellipsis;
+}
+
+
+form.formSendComment {
+display : grid;
+grid-template-columns : 2fr 1fr;
+grid-gap : 1px;
+margin : 7px;
+}
+
+
+form.formSendComment input {
+border-radius : 5px;
+border : none;
+width : 90%;
+text-align : center;
+}
+
+
