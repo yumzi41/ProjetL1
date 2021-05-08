@@ -26,7 +26,7 @@ $buttonVisibleFormNewPost = Auther\MotorTemplate::cButton("buttonVisibleFormNewP
 /* creation du formulaire qui apparaitra et disparaitra par le clique de l'utilisateur */
 
 $titleNewPost = Auther\MotorTemplate::cInput("newPostTitle", "text", "","newPostTitle", "Titre...", "$.{1,50}^" );
-$descriptionNewPost = Auther\MotorTemplate::cTextArea("newPostDescription","newPostDescription", "exprimez vous...", "","", "$.{1,250}^" );
+$descriptionNewPost = Auther\MotorTemplate::cTextArea("newPostDescription","newPostDescription", "exprimez vous...", "","", "$.{1,250}^", "");
 $submitButtonNewPost = Auther\MotorTemplate::cInput("newPostSubmitButton", "submit", "Confirmer","newPostSubmitButton", "", "" );
 $buttonInvisibleFormNewPost = Auther\MotorTemplate::cButton("buttonInvisibleFormNewPost", "buttonInvisibleFormNewPost", "X");
 $formNewPost =  Auther\MotorTemplate::cForm("formNewPost","POST","", $titleNewPost . $descriptionNewPost . $submitButtonNewPost . $buttonInvisibleFormNewPost);

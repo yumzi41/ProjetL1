@@ -20,7 +20,7 @@ class MotorTemplate{
 
 	}
 
-	static function cTextarea($id, $name, $placeholder, $rows, $columns, $pattern){
+	static function cTextarea($id, $name, $placeholder, $rows, $columns, $pattern, $value){
 		return "<textarea id='{$id}' name='{$name}' rows='{$rows} cols='{$columns}' pattern='{$pattern}'></textarea>";
 	}
 
@@ -30,6 +30,14 @@ class MotorTemplate{
 
 	static function cForm($class, $method, $action, $element){
 		return "<form class='{$class}' 
+		method='{$method}' 
+		action='{$action}'>" .
+		$element . "</form>";
+	}
+
+	static function cFormImg($class, $method, $action, $element){
+		return "<form class='{$class}' 
+		enctype='multipart/form-data'
 		method='{$method}' 
 		action='{$action}'>" .
 		$element . "</form>";

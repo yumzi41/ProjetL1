@@ -6,7 +6,7 @@ class ChargePost{
 
 	static function chargeCacheOrNewPostSection($kserver, $time, $userId, int $nbr, $default){
 
-		$cache = \Auther\Injection::getCache($kserver, $userId, $time);
+		$cache = \Auther\Injection::getCache($kserver, "post" . $userId, $time);
 		
 		if($cache->verifyCacheFileExists() && $default){
 

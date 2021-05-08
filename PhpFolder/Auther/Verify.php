@@ -12,6 +12,16 @@ class Verify{
 		return true;
 	}
 
+	static function verifSessionElementsExist(array $tabElements){
+		foreach($tabElements as $e){
+			if(!isset($_SESSION[$e])){
+
+				return false;
+			}
+		}
+		return true;
+	}
+
 	static function verifPasswordConfirmMatch($password, $passwordConfirm, &$response){
 		if($password===$passwordConfirm){
 			return true;

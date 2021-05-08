@@ -7,6 +7,7 @@ $a = new Auther\Autoloader();
 $default = false;
 
 
+
 if(isset($_SESSION['user_id'])){
 
 	require("SpaceFolder/UserInterface.php");
