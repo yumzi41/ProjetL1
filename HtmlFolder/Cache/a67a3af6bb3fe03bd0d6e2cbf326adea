@@ -1,7 +1,7 @@
 <div id='divEditProfil' class='divEditProfil'><form class='formEditProfil' 
 		enctype='multipart/form-data'
 		method='POST' 
-		action='Main?space=userinterface&section=profil&mode=edit'><p class='imgP'><img src='../Img/avatar.png' class='imgProfil'></p><input type='file' 
+		action='Main?space=userinterface&section=profil&mode=edit'><p class='imgP'><img src='../ImgProfil/c7e5bcf7eee2ac86551ea31949d0391320.png' class='imgProfil'></p><input type='file' 
 		name='editProfilImgFile' 
 		value='' 
 		class='editProfilImgFile' 

@@ -7,6 +7,12 @@ class ChargeProfil{
 
 	static function chargeCacheOrNewProfilSection($kserver, $time, $userId, $default){
 
+		if(isset($_GET["update"])){
+			if($_GET["update"]=="true"){
+				$default = false;
+			}
+		}
+
 		if(isset($_GET["mode"])){
 
 			if($_GET["mode"] == "edit"){

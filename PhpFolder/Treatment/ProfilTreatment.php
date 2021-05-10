@@ -6,26 +6,24 @@ class ProfilTreatment{
 
 	static $tabElements = array("Surname", "Name", "Pseudo", "Biographie");
 
-	static $extensionsValid = array("png", "jpeg");
+	static $extensionsValid = array("png", "jpeg", "jpg");
 
 	static function verifImgFile($imgFile, &$response){
 
 		$pathImgFile = "";
 
-		echo $imgFile['tmp_name'];
-
 		if($imgFile["name"] == ""){
-			echo "img empty";
+
 			return $pathImgFile;
 		}
 
-		if($imgFile["size"]<100000){
+		if($imgFile["size"]<=1000000){
 
 			$fileInfos = pathinfo($imgFile["name"]);
 
-			if(in_array($fileInfos["extension"], self::$extensionsValid)){
+			if(in_array(strtolower($fileInfos["extension"]), self::$extensionsValid)){
 
-				$pathImgFile = "../ImgProfil/" . md5(date(DATE_ATOM, mktime(0, 0, 0, 7, 1, 2000)) . "-" . $_SESSION["user_id"]);
+				$pathImgFile = "../ImgProfil/" . md5(date('l jS \of F Y h:i:s A')) . $_SESSION["user_id"] .".". $fileInfos["extension"];
 
 				move_uploaded_file($imgFile['tmp_name'], $pathImgFile);
 
@@ -94,8 +92,6 @@ class ProfilTreatment{
 					"url"=>$pathImgFile,
 					"fk_user_id"=>$_SESSION["user_id"]));
 
-			var_dump($query1);
-			var_dump($query2);
 
 			if($query1 && $query2){
 				return true;
@@ -109,10 +105,6 @@ class ProfilTreatment{
 
 			}
 		}
-
-
-		
-
 	}
 
 	static function treatment(&$response){
@@ -121,13 +113,9 @@ class ProfilTreatment{
 
 		if(\Auther\Verify::verifPostElementsExist("editProfil", self::$tabElements) && isset($_FILES["editProfilImgFile"])){
 
-			echo "recu";
-
 			$imgFile = self::verifImgFile($_FILES["editProfilImgFile"], $response);
 
-			var_dump($imgFile);
-
-			if($imgFile || $imgFile==""){
+			if($imgFile!=null){
 
 				$callBackUpdate = self::updateProfil(
 					$_POST["editProfilSurname"],
@@ -142,15 +130,15 @@ class ProfilTreatment{
 					$_SESSION["name"] = $_POST["editProfilName"];
 					$_SESSION["pseudo"] = $_POST["editProfilPseudo"];
 					$_SESSION["biographie"] = $_POST["editProfilBiographie"];
-					$_SESSION["url_img_profil"] = $imgFile;
-				
-					header("Location:Main?space=userinterface&section=profil&mode=visit");
-					die();
-					
-				}else{
+					if(!$imgFile==""){
 
-					
+						$_SESSION["url_img_profil"] = $imgFile;
 
+					}
+					
+					header("Location:Main?space=userinterface&section=profil&mode=visit&update=true");
+					die(); 
+					
 				}
 				
 			}

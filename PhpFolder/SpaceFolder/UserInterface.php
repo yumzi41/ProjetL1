@@ -7,7 +7,6 @@ if(isset($_GET["section"])){
 	$section = $_GET["section"];
 
 	if($section == "profil"){
-		
 
 		$editProfilResponse = null;
 

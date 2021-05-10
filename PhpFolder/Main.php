@@ -4,7 +4,7 @@ session_start();
 
 require('Auther/Autoloader.php');
 $a = new Auther\Autoloader();
-$default = false;
+$default = true;
 
 
 

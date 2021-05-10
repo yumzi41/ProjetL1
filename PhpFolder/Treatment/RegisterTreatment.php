@@ -103,9 +103,6 @@ static function register($surname, $name, $pseudo, $email, $password, $passwordC
 			$registerResponse = \Auther\MotorTemplate::cP("registerResponse", "Veuillez remplir tout les champs.");
 		}
 	}
-
-
-	
-
-}  ?>
+}
+?>
 
