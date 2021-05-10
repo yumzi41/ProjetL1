@@ -20,8 +20,8 @@ class MotorTemplate{
 
 	}
 
-	static function cTextarea($id, $name, $placeholder, $rows, $columns, $pattern, $value){
-		return "<textarea id='{$id}' name='{$name}' rows='{$rows} cols='{$columns}' pattern='{$pattern}'></textarea>";
+	static function cTextarea($class, $name, $placeholder, $rows, $columns, $pattern, $value){
+		return "<textarea class='{$class}' name='{$name}' rows='{$rows} cols='{$columns}' pattern='{$pattern}'></textarea>";
 	}
 
 	static function cA($class, $href, $value){

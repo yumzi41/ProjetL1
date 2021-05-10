@@ -7,9 +7,6 @@ class CommentTreatment{
 
 	static function insert($content, $userId, $postId){
 
-		if(isset($_SESSION["user_id"])){
-
-
 		$query = \Database\Db::getInstance()->prepare("INSERT INTO comments(content, date_publi, fk_user_id, fk_post_id) VALUES(:content, NOW(), :fk_user_id, :fk_post_id)");
 
 			if($query->execute(array("content"=>$content, 
@@ -29,16 +26,13 @@ class CommentTreatment{
 		$query->closeCursor();
 		return false;
 
-			
-		}else{
-			header('Location:http://localhost/ProjetL1/PhpFolder/Main.php');
-			die();
-		}
-
 	}
 
 
 	static function treatment(){
+
+		\Auther\Verify::verifSessionExists();
+
 		 if(\Auther\Verify::verifPostElementsExist("sendComment", self::$tabElements)){
 		 	self::insert(
 		 		$_POST["sendCommentEditText"],

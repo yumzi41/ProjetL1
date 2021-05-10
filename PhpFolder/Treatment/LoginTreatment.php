@@ -8,8 +8,8 @@ class LoginTreatment{
 
 	static function login($email, $password, &$response){
 
-		$query = \Database\Db::getInstance()->prepare("SELECT * FROM users AS u LEFT JOIN imgProfil AS i ON 
-			(u.user_id = i.fk_user_id) WHERE email=:email");
+		$query = \Database\Db::getInstance()->prepare("SELECT * FROM users 
+		 WHERE email=:email");
 
 		if($query->execute(array("email"=>$email))){
 			
@@ -23,13 +23,13 @@ class LoginTreatment{
 					$_SESSION["pseudo"] = $row["pseudo"];
 					$_SESSION["biographie"] = $row["biographie"];
 
-					if($row["url"] == null || $row["url"] == "" || $row["url"] == "NULL" || $row["url"] == "null"){
+					if($row["url_img_profil"] == null || $row["url_img_profil"] == "" || $row["url_img_profil"] == "NULL" || $row["url_img_profil"] == "null"){
 
-						$_SESSION["img_profil_url"] = "../Img/avatar.png";
+						$_SESSION["url_img_profil"] = "../Img/avatar.png";
 						
 					}else
 					{
-						$_SESSION["img_profil_url"] = $row["url"];
+						$_SESSION["url_img_profil"] = $row["url_img_profil"];
 					}
 
 					

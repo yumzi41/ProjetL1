@@ -29,7 +29,7 @@ $titleNewPost = Auther\MotorTemplate::cInput("newPostTitle", "text", "","newPost
 $descriptionNewPost = Auther\MotorTemplate::cTextArea("newPostDescription","newPostDescription", "exprimez vous...", "","", "$.{1,250}^", "");
 $submitButtonNewPost = Auther\MotorTemplate::cInput("newPostSubmitButton", "submit", "Confirmer","newPostSubmitButton", "", "" );
 $buttonInvisibleFormNewPost = Auther\MotorTemplate::cButton("buttonInvisibleFormNewPost", "buttonInvisibleFormNewPost", "X");
-$formNewPost =  Auther\MotorTemplate::cForm("formNewPost","POST","", $titleNewPost . $descriptionNewPost . $submitButtonNewPost . $buttonInvisibleFormNewPost);
+$formNewPost =  Auther\MotorTemplate::cForm("formNewPost","POST","#", $titleNewPost . $descriptionNewPost . $submitButtonNewPost . $buttonInvisibleFormNewPost);
 $divFormNewPost = Auther\MotorTemplate::cDiv("divFormNewPost", "divFormNewPost", $formNewPost);
 $divBottomLeft = Auther\MotorTemplate::cDiv("divBottomLeft", "divBottomLeft", $divFormNewPost . $buttonVisibleFormNewPost);
 

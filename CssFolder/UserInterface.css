@@ -191,4 +191,44 @@ width : 90%;
 text-align : center;
 }
 
+/* profil section css */
+
+img.imgProfil {
+width : 150px;
+height : 150px;
+margin : 3px;
+}
+
+form.formEditProfil, div.divVisitProfil { 
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	grid-gap: 3px;
+	box-shadow : 0 0 7px;
+	background-color : rgb(0, 0, 0, 0.20);
+	padding : 20px;
+	border-radius : 45px;
+	margin : 7px;
+
+}
+
+div.divVisitProfil p { 
+color: white; }
+
+form.formEditProfil input, form.formEditProfil textarea { 
+border-radius: 5px;
+border :none ;
+width: 55%;
+}
+
+input.editProfilSubmitButton { 
+background: black;
+width: 50%;
+color: white;
+}
+
+textarea.editProfilBiographie { 
+	resize: none; }
+
 

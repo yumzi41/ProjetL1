@@ -60,6 +60,13 @@ class Verify{
 			return false;
 		}
 	}
+
+	static function verifSessionExists(){
+		if(!isset($_SESSION["user_id"])){
+			header('Location:http://localhost/ProjetL1/PhpFolder/Main.php');
+			die();
+		}
+	}
 }  
 
 ?>

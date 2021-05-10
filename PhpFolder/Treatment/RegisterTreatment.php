@@ -52,10 +52,13 @@ static function register($surname, $name, $pseudo, $email, $password, $passwordC
 				$query->closeCursor();
 				$response = \Auther\MotorTemplate::cP("registerResponse", "erreur.");
 				return false;
-
-		}else
+			}
+		}
+		else
+		{
 			$response = \Auther\MotorTemplate::cP("registerResponse", "erreur.");
 			return false;
+		}
 	}
 
 	
@@ -65,7 +68,7 @@ static function register($surname, $name, $pseudo, $email, $password, $passwordC
 
 			$query = \Database\Db::getInstance()->prepare("SELECT * FROM users WHERE email = :email");
 
-			if($query->execute(array("email"=>$email)){
+			if($query->execute(array("email"=>$email))){
 
 				if(!$query->fetch()==null || !$query->rowCount()==0){
 
@@ -82,10 +85,12 @@ static function register($surname, $name, $pseudo, $email, $password, $passwordC
 				$response = \Auther\MotorTemplate::cP("registerResponse", "erreur.");
 				return false;
 			}
+		
 
-		}else
+		}else{
 			$response = \Auther\MotorTemplate::cP("registerResponse", "erreur.");
 			return false;
+		}
 	}
 
 	static function treatment(&$registerResponse){

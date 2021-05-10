@@ -12,7 +12,6 @@ class ChargePost{
 
 			return $cache->getPathCache();
 
-		//login space init
 
 		}else{
 
@@ -66,7 +65,7 @@ class ChargePost{
 
 					$sendCommentHiddenPostId = \Auther\MotorTemplate::cInput("sendCommentHiddenPostId", "hidden", $row['post_id'], "sendCommentHiddenPostId", "", "");
 
-					$formSendComment = \Auther\MotorTemplate::cForm("formSendComment","POST", "Main?space=userinterface&section=actu#" . $row["post_id"], $sendCommentEditText . $sendCommentSubmitButton . $sendCommentHiddenPostId);
+					$formSendComment = \Auther\MotorTemplate::cForm("formSendComment","POST", "#" . $row["post_id"], $sendCommentEditText . $sendCommentSubmitButton . $sendCommentHiddenPostId);
 					
 					$divHead = \Auther\MotorTemplate::cDiv("", "divHead", $date . $pseudo . $title);
 					$divImg = \Auther\MotorTemplate::cDiv("", "divImg", self::chargeImgPost($row["post_id"]));
