@@ -1,11 +1,11 @@
 <?php
+
 // dans l'ensemble, les fonctions de cette classe fonctionnent comme celles documentées précedemment //
+
 namespace Charge;
 class ChargeProfil{
 
 	static $tabElements = array("user_id", "surname", "name", "pseudo", "biographie", "url_img_profil");
-
-	
 
 	static function chargeProfilSection(&$contentUserInterfaceMiddle, $kserver, $userId, int $nbr){
 
@@ -33,49 +33,45 @@ class ChargeProfil{
 
 	static function chargeCacheOrNewProfilSection($kserver, $time, $userId){
 		
-		if(isset($_GET["mode"])){
-
-			if($_GET["mode"] == "edit"){
-
+		if(isset($_GET["mode"]) && $_GET["mode"] == "edit"){
+				
 				$cache = \Auther\Injection::getCache($kserver, "profilEdit" . $userId, 10);
 
 				if($cache->verifyCacheFileExists() && false){
 
-				return $cache->getPathCache();
+					return $cache->getPathCache();
 
 				}else{
 
-				$htmlContent = self::ChargeProfilEdit();
-				$cache->setContent($htmlContent);
-
-				return $cache->getPathCache();
+					$htmlContent = self::ChargeProfilEdit();
+					$cache->setContent($htmlContent);
+					return $cache->getPathCache();
 
 				}
 
 			}
-		}
+		else{
+
 			$cache = \Auther\Injection::getCache($kserver, "profilVisit" . $userId, $time);
 
 			if($cache->verifyCacheFileExists() && false){
 
-			return $cache->getPathCache();
+				return $cache->getPathCache();
 
 			}else{
 
-			$htmlContent = self::ChargeProfilVisit();
-			$cache->setContent($htmlContent);
-
-			return $cache->getPathCache();
-
-			
-		}
+				$htmlContent = self::ChargeProfilVisit();
+				$cache->setContent($htmlContent);
+				return $cache->getPathCache();
+			}
 	}
+}
 
 	// Cette fonction récupérera ces données directement dans le tableau $_SESSION fréquemment mis à jour //
 
 	static function ChargeProfilVisit(){
 
-		$content = "";
+		$content = \Auther\MotorTemplate::cA("loadErrorProfil","Main?space=disconnect", "Erreur chargement profil, essayez de vous reconnecter.");
 
 		if(\Auther\Verify::verifSessionElementsExist(self::$tabElements)){
 
@@ -85,6 +81,7 @@ class ChargeProfil{
 
 			}else
 			{
+				
 				return $content;
 			}
 	}
@@ -93,15 +90,19 @@ class ChargeProfil{
 
 	static function chargeProfilEdit(){
 
-		$content = "";
+		$content = \Auther\MotorTemplate::cA("loadErrorProfil","Main?space=disconnect", "Erreur chargement profil, essayez de vous reconnecter.");
 
 		if(\Auther\Verify::verifSessionElementsExist(self::$tabElements)){
 
 			require("HiddenPhp/ProfilEdit.php");
 
+			echo "verif ok";
+
 			return $content;
 
 			}else{
+
+				echo "verif pas ok";
 
 				return $content;
 			}

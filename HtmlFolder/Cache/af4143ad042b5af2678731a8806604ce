@@ -8,7 +8,7 @@
 <body>
 	<div id='' class='divMain'><div id='' class='divNavigationBar'><a href='Main?space=userinterface&section=actu' class='actuLink'> Actualité </a> <a href='Main?space=userinterface&section=profil' class='profilLink'> Mon Profil </a> <a href='Main?space=userinterface&section=chat' class='chatLink'> Chat </a> </div><div id='space' class='space'></div><div id='' class='divSpaceContent'><div id='' class='divContentUserInterfaceLeft'><?= $contentUserInterfaceLeft ?? ''; ?></div><div id='' class='divContentUserInterfaceMiddle'><?= $contentUserInterfaceMiddle ?? ''; ?></div><div id='' class='divContentUserInterfaceRight'><?= $contentUserInterfaceRight ?? ''; ?></div></div></div><div id='divBottomLeft' class='divBottomLeft'><div id='divFormNewPost' class='divFormNewPost'><form class='formNewPost' 
 		method='POST' 
-		action='Main?space=userinterface&update=true#top'><input type='text' 
+		action='Main?space=userinterface&update=true'><input type='text' 
 		name='newPostTitle' 
 		value='' 
 		class='newPostTitle' 

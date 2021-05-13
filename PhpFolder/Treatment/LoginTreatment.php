@@ -32,6 +32,18 @@ class LoginTreatment{
 						$_SESSION["url_img_profil"] = $row["url_img_profil"];
 					}
 
+
+					if($row["biographie"] == null || $row["biographie"] == "" || $row["biographie"] == "NULL" || $row["biographie"] == "null" || !file_exists($row["biographie"])){
+
+						$_SESSION["biographie"] = ".";
+						
+					}else
+					{
+						$_SESSION["biographie"] = $row["biographie"];
+					}
+
+
+
 					
 
 					$query->closeCursor();

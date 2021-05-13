@@ -35,7 +35,7 @@
 
 			$passwordConfirmEditText = Auther\MotorTemplate::cInput("registerPasswordConfirm", 
 				"password", 
-				"K2z623pt?", 
+				"", 
 				"registerPasswordConfirmEditText",
 				"veuillez confirmer votre mot de passe", "");
 

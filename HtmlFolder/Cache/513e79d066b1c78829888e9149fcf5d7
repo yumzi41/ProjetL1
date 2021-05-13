@@ -1,0 +1,88 @@
+<div id='divMessage38' class='divPersonnalMessage'><div id='divHead' class='divHead'><p class='imgProfilP'><img src='../ImgProfil/e3793020cfd3ad05551acf1fa50695a0.png' class='imgProfil'></p><p class='pseudo'>---vous---</p><p class='date'>Le 2021-05-13 22:29:08</p></div><p class='content'>bon je suis solo la mdr</p><button id='buttonSuppressMessage38' type='button' class='buttonSuppressMessage'> suppimer </button><form 
+		id='formSuppressMessage38'
+		class='formSuppressMessage'
+		method='POST' 
+		action='Main?space=userinterface&section=chat&update=true'><input type='submit' 
+		name='suppressMessageSubmitButton' 
+		value='confirmer' 
+		class='suppressMessageSubmitButton'
+		pattern='?'
+		placeholder=''
+		/><button id='buttonCanceledSuppressMessage38' type='button' class='buttonCancelledSuppressMessage'> annuler </button><input type='hidden' 
+		name='suppressMessageHiddenMessageId' 
+		value='38' 
+		class='suppressMessageHiddenMessageId'
+		pattern='?'
+		placeholder=''
+		/></form><script> if(document.getElementById('buttonSuppressMessage38').style.visibility != 'hidden')
+{
+	document.getElementById('formSuppressMessage38').style.visibility = 'hidden';
+}
+document.getElementById('buttonSuppressMessage38').onclick = function(){
+	document.getElementById('buttonSuppressMessage38').style.visibility = 'hidden';
+	document.getElementById('formSuppressMessage38').style.visibility = 'visible';
+
+}
+document.getElementById('buttonCanceledSuppressMessage38').onclick = function(){
+	document.getElementById('buttonSuppressMessage38').style.visibility = 'visible';
+	document.getElementById('formSuppressMessage38').style.visibility = 'hidden';
+
+} </script></div><div id='divMessage37' class='divPersonnalMessage'><div id='divHead' class='divHead'><p class='imgProfilP'><img src='../ImgProfil/e3793020cfd3ad05551acf1fa50695a0.png' class='imgProfil'></p><p class='pseudo'>---vous---</p><p class='date'>Le 2021-05-13 22:29:01</p></div><p class='content'>Vous allez bien !!</p><button id='buttonSuppressMessage37' type='button' class='buttonSuppressMessage'> suppimer </button><form 
+		id='formSuppressMessage37'
+		class='formSuppressMessage'
+		method='POST' 
+		action='Main?space=userinterface&section=chat&update=true'><input type='submit' 
+		name='suppressMessageSubmitButton' 
+		value='confirmer' 
+		class='suppressMessageSubmitButton'
+		pattern='?'
+		placeholder=''
+		/><button id='buttonCanceledSuppressMessage37' type='button' class='buttonCancelledSuppressMessage'> annuler </button><input type='hidden' 
+		name='suppressMessageHiddenMessageId' 
+		value='37' 
+		class='suppressMessageHiddenMessageId'
+		pattern='?'
+		placeholder=''
+		/></form><script> if(document.getElementById('buttonSuppressMessage37').style.visibility != 'hidden')
+{
+	document.getElementById('formSuppressMessage37').style.visibility = 'hidden';
+}
+document.getElementById('buttonSuppressMessage37').onclick = function(){
+	document.getElementById('buttonSuppressMessage37').style.visibility = 'hidden';
+	document.getElementById('formSuppressMessage37').style.visibility = 'visible';
+
+}
+document.getElementById('buttonCanceledSuppressMessage37').onclick = function(){
+	document.getElementById('buttonSuppressMessage37').style.visibility = 'visible';
+	document.getElementById('formSuppressMessage37').style.visibility = 'hidden';
+
+} </script></div><div id='divMessage36' class='divPersonnalMessage'><div id='divHead' class='divHead'><p class='imgProfilP'><img src='../ImgProfil/e3793020cfd3ad05551acf1fa50695a0.png' class='imgProfil'></p><p class='pseudo'>---vous---</p><p class='date'>Le 2021-05-13 22:28:55</p></div><p class='content'>Bonjour le chat !</p><button id='buttonSuppressMessage36' type='button' class='buttonSuppressMessage'> suppimer </button><form 
+		id='formSuppressMessage36'
+		class='formSuppressMessage'
+		method='POST' 
+		action='Main?space=userinterface&section=chat&update=true'><input type='submit' 
+		name='suppressMessageSubmitButton' 
+		value='confirmer' 
+		class='suppressMessageSubmitButton'
+		pattern='?'
+		placeholder=''
+		/><button id='buttonCanceledSuppressMessage36' type='button' class='buttonCancelledSuppressMessage'> annuler </button><input type='hidden' 
+		name='suppressMessageHiddenMessageId' 
+		value='36' 
+		class='suppressMessageHiddenMessageId'
+		pattern='?'
+		placeholder=''
+		/></form><script> if(document.getElementById('buttonSuppressMessage36').style.visibility != 'hidden')
+{
+	document.getElementById('formSuppressMessage36').style.visibility = 'hidden';
+}
+document.getElementById('buttonSuppressMessage36').onclick = function(){
+	document.getElementById('buttonSuppressMessage36').style.visibility = 'hidden';
+	document.getElementById('formSuppressMessage36').style.visibility = 'visible';
+
+}
+document.getElementById('buttonCanceledSuppressMessage36').onclick = function(){
+	document.getElementById('buttonSuppressMessage36').style.visibility = 'visible';
+	document.getElementById('formSuppressMessage36').style.visibility = 'hidden';
+
+} </script></div>

@@ -1,0 +1,50 @@
+<div id='56' class='divPost'><div id='' class='divLeft'><div id='' class='divHead'><p class='imgProfilPostP'><img src='../ImgProfil/e3793020cfd3ad05551acf1fa50695a0.png' class='imgProfilPost'></p><p class='date_publi'>Le : 2021-05-13 22:24:00, </p><p class='pseudo'>de : yumzi, </p><p class='title'>intitulé : exercice de maths :/.</p></div><p class='description'>Help je n'arrive vraiment pas à résoudre cette exercice : 6x + 9 = 22. Il faut trouver x. Merci à vous.</p><div id='' class='divImg'></div></div><div id='' class='divRight'><form class='formSendComment' 
+		method='POST' 
+		action='Main?space=userinterface&section=profil&update=true#56'><input type='text' 
+		name='sendCommentEditText' 
+		value='' 
+		class='sendCommentEditText'
+		pattern='?'
+		placeholder='commenter'
+		/><input type='submit' 
+		name='sendCommentSubmitButton' 
+		value='Go' 
+		class='sendCommentSubmitButton'
+		pattern='?'
+		placeholder=''
+		/><input type='hidden' 
+		name='sendCommentHiddenPostId' 
+		value='56' 
+		class='sendCommentHiddenPostId'
+		pattern='?'
+		placeholder=''
+		/></form><div id='' class='divCom'><div id='' class='divComment'><div id='' class='divHeadComment'><p class='imgProfilCommentP'><img src='../ImgProfil/e3793020cfd3ad05551acf1fa50695a0.png' class='imgProfilComment'></p><p class='pseudo'>yumzi</p></div><p class='text'>Bon personne ne semble vouloir m'aider...</p></div></div></div><button id='buttonSuppressPost56' type='button' class='buttonSuppressPost'> suppimer </button><form 
+		id='formSuppressPost56'
+		class='formSuppressPost'
+		method='POST' 
+		action='Main?space=userinterface&section=profil&update=true'><input type='submit' 
+		name='suppressPostSubmitButton' 
+		value='confirmer' 
+		class='suppressPostSubmitButton'
+		pattern='?'
+		placeholder=''
+		/><button id='buttonCanceledSuppressPost56' type='button' class='buttonCancelledSuppressPost'> annuler </button><input type='hidden' 
+		name='suppressPostHiddenPostId' 
+		value='56' 
+		class='suppressPostHiddenPostId'
+		pattern='?'
+		placeholder=''
+		/></form><script> if(document.getElementById('buttonSuppressPost56').style.visibility != 'hidden')
+{
+	document.getElementById('formSuppressPost56').style.visibility = 'hidden';
+}
+document.getElementById('buttonSuppressPost56').onclick = function(){
+	document.getElementById('buttonSuppressPost56').style.visibility = 'hidden';
+	document.getElementById('formSuppressPost56').style.visibility = 'visible';
+
+}
+document.getElementById('buttonCanceledSuppressPost56').onclick = function(){
+	document.getElementById('buttonSuppressPost56').style.visibility = 'visible';
+	document.getElementById('formSuppressPost56').style.visibility = 'hidden';
+
+} </script></div>

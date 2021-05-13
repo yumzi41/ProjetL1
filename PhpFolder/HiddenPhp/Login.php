@@ -5,13 +5,13 @@
 
 	$emailEditText = Auther\MotorTemplate::cInput("loginEmail",
 		"text", 
-		"slapirock@gmail.com",
+		"visiteur@gmail.com",
 		"loginEmailEditText",
 		"veuillez entrer votre email", "");
 
 	$passwordEditText = Auther\MotorTemplate::cInput("loginPassword", 
 		"password", 
-		"K2z623pt?", 
+		"Motdepasse", 
 		"loginPasswordEditText",
 		"veuillez entrer votre mot de passe", "");
 

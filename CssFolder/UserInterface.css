@@ -364,6 +364,7 @@ color: red;
 
 div.divChat { 
 display: grid;
+grid-template-rows: 5fr 1fr;
 height: 600px;
 margin : 10px;
 

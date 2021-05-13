@@ -24,6 +24,7 @@ class Verify{
 				return false;
 			}
 		}
+		
 		return true;
 	}
 
@@ -46,12 +47,12 @@ class Verify{
 				return true;
 
 			}else
-			$response = MotorTemplate::cP("response", "erreur syntaxe mot de passe.");
+			$response = MotorTemplate::cP("response", "Votre mdp doit contenir une majuscule.");
 			return false;
 			
 		}
 		else
-			$response = MotorTemplate::cP("response", "erreur syntaxe mot de passe.");
+			$response = MotorTemplate::cP("response", "Votre mdp doit avoir minimum 8 caractères.");
 			return false;
 
 	}
