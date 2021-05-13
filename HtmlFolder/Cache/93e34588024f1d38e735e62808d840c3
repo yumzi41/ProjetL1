@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>home</title>
+	<title>StudHelp.com-home</title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="../CssFolder/Portal.css">
 </head>
 <body>
-	<div id='' class='divMain'><p class='imgHomeP'><img src='../Img/logo.png' class='imgHome'></p><div id='' class='divLink'><a href='Main.php?space=login' class='HomeLoginLink'> se connecter. </a> <a href='Main.php?space=register' class='HomeRegisterLink'> s'inscrire. </a> </div></div>
+	<div id='homeDiv' class='divMain'><p class='siteTitle'>StudHelp-GrandMont</p><div id='' class='divLink'><a href='Main.php?space=login' class='HomeLoginLink'> se connecter. </a> <a href='Main.php?space=register' class='HomeRegisterLink'> s'inscrire. </a> </div></div>
 </body>
 </html>

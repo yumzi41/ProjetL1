@@ -5,19 +5,39 @@ class ChargeProfil{
 
 	static $tabElements = array("user_id", "surname", "name", "pseudo", "biographie", "url_img_profil");
 
+	static function chargeProfilSection(&$contentUserInterfaceMiddle, $kserver, $userId, int $nbr, $default){
+
+		$contentUserInterfaceMiddle = null;
+
+		$editProfilResponse = null;
+
+		\Treatment\PostTreatment::treatment();
+
+		\Treatment\CommentTreatment::treatment();
+
+		\Treatment\ProfilTreatment::treatment($editProfilResponse);
+
+		\Treatment\SuppressPostTreatment::treatment();
+
+		ob_start();
+
+		require ChargeProfil::chargeCacheOrNewProfilSection($kserver, 
+			360, $userId, $default);
+
+		require ChargePost::chargeCacheOrNewPostSection($kserver, 60, $userId, $nbr, $default);
+
+		$contentUserInterfaceMiddle = ob_get_clean();
+	}
+
 	static function chargeCacheOrNewProfilSection($kserver, $time, $userId, $default){
 
-		if(isset($_GET["update"])){
-			if($_GET["update"]=="true"){
-				$default = false;
-			}
-		}
-
+		\Auther\Verify::verifUpdateMode($default);
+		
 		if(isset($_GET["mode"])){
 
 			if($_GET["mode"] == "edit"){
 
-				$cache = \Auther\Injection::getCache($kserver, "profilEdit" . $userId, $time);
+				$cache = \Auther\Injection::getCache($kserver, "profilEdit" . $userId, 10);
 
 				if($cache->verifyCacheFileExists() && $default){
 

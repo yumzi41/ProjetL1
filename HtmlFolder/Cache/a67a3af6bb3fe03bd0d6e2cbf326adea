@@ -1,7 +1,7 @@
 <div id='divEditProfil' class='divEditProfil'><form class='formEditProfil' 
 		enctype='multipart/form-data'
 		method='POST' 
-		action='Main?space=userinterface&section=profil&mode=edit'><p class='imgP'><img src='../ImgProfil/c7e5bcf7eee2ac86551ea31949d0391320.png' class='imgProfil'></p><input type='file' 
+		action='Main?space=userinterface&section=profil&mode=edit'><p class='imgP'><img src='../ImgProfil/332b067934cee629a69ba6113db7f1e520.jpg' class='imgProfil'></p><input type='file' 
 		name='editProfilImgFile' 
 		value='' 
 		class='editProfilImgFile' 
@@ -25,7 +25,7 @@
 		class='editProfilPseudo' 
 		placeholder='Pseudo...'
 		patter=$.{1,50}^
-		required=''/><textarea class='editProfilBiographie' name='editProfilBiographie' rows='8 cols='8' pattern='$.{1,250}^'></textarea><input type='submit' 
+		required=''/><textarea class='editProfilBiographie' name='editProfilBiographie' rows='7' placeholder='Biographie...' cols='' pattern='$.{1,250}^'>JJJJlckjdqlcdjk</textarea><input type='submit' 
 		name='editProfilSubmitButton' 
 		value='Confirmer' 
 		class='editProfilSubmitButton' 

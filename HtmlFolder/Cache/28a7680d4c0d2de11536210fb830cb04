@@ -1,0 +1,981 @@
+<div id='44' class='divPost'><div id='' class='divLeft'><div id='' class='divHead'><p class='imgProfilPostP'><img src='../ImgProfil/332b067934cee629a69ba6113db7f1e520.jpg' class='imgProfilPost'></p><p class='date_publi'>Le : 2021-05-13 12:21:21, </p><p class='pseudo'>de : yumzi, </p><p class='title'>intitulé : j.</p></div><p class='description'>bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb</p><div id='' class='divImg'></div></div><div id='' class='divRight'><form class='formSendComment' 
+		method='POST' 
+		action='Main?space=userinterface&section=profil#44'><input type='text' 
+		name='sendCommentEditText' 
+		value='' 
+		class='sendCommentEditText' 
+		placeholder='commenter'
+		pattern=
+		required=''/><input type='submit' 
+		name='sendCommentSubmitButton' 
+		value='Go' 
+		class='sendCommentSubmitButton' 
+		placeholder=''
+		pattern=
+		required=''/><input type='hidden' 
+		name='sendCommentHiddenPostId' 
+		value='44' 
+		class='sendCommentHiddenPostId' 
+		placeholder=''
+		pattern=
+		required=''/></form><div id='' class='divCom'></div></div><button id='buttonSuppressPost44' type='button' class='buttonSuppressPost'> suppimer </button><form 
+		id='formSuppressPost44'
+		class='formSuppressPost'
+		method='POST' 
+		action='Main?space=userinterface&section=profil&update=true'><input type='submit' 
+		name='suppressPostSubmitButton' 
+		value='confirmer' 
+		class='suppressPostSubmitButton' 
+		placeholder=''
+		pattern=
+		required=''/><button id='buttonCanceledSuppressPost44' type='button' class='buttonCancelledSuppressPost'> annuler </button><input type='hidden' 
+		name='suppressPostHiddenPostId' 
+		value='44' 
+		class='suppressPostHiddenPostId' 
+		placeholder=''
+		pattern=
+		required=''/></form><script> if(document.getElementById('buttonSuppressPost44').style.visibility != 'hidden')
+{
+	document.getElementById('formSuppressPost44').style.visibility = 'hidden';
+}
+document.getElementById('buttonSuppressPost44').onclick = function(){
+	document.getElementById('buttonSuppressPost44').style.visibility = 'hidden';
+	document.getElementById('formSuppressPost44').style.visibility = 'visible';
+
+}
+document.getElementById('buttonCanceledSuppressPost44').onclick = function(){
+	document.getElementById('buttonSuppressPost44').style.visibility = 'visible';
+	document.getElementById('formSuppressPost44').style.visibility = 'hidden';
+
+} </script></div><div id='43' class='divPost'><div id='' class='divLeft'><div id='' class='divHead'><p class='imgProfilPostP'><img src='../ImgProfil/332b067934cee629a69ba6113db7f1e520.jpg' class='imgProfilPost'></p><p class='date_publi'>Le : 2021-05-13 12:20:58, </p><p class='pseudo'>de : yumzi, </p><p class='title'>intitulé : bonjoutrefghkliythbcghju.</p></div><p class='description'></p><div id='' class='divImg'></div></div><div id='' class='divRight'><form class='formSendComment' 
+		method='POST' 
+		action='Main?space=userinterface&section=profil#43'><input type='text' 
+		name='sendCommentEditText' 
+		value='' 
+		class='sendCommentEditText' 
+		placeholder='commenter'
+		pattern=
+		required=''/><input type='submit' 
+		name='sendCommentSubmitButton' 
+		value='Go' 
+		class='sendCommentSubmitButton' 
+		placeholder=''
+		pattern=
+		required=''/><input type='hidden' 
+		name='sendCommentHiddenPostId' 
+		value='43' 
+		class='sendCommentHiddenPostId' 
+		placeholder=''
+		pattern=
+		required=''/></form><div id='' class='divCom'></div></div><button id='buttonSuppressPost43' type='button' class='buttonSuppressPost'> suppimer </button><form 
+		id='formSuppressPost43'
+		class='formSuppressPost'
+		method='POST' 
+		action='Main?space=userinterface&section=profil&update=true'><input type='submit' 
+		name='suppressPostSubmitButton' 
+		value='confirmer' 
+		class='suppressPostSubmitButton' 
+		placeholder=''
+		pattern=
+		required=''/><button id='buttonCanceledSuppressPost43' type='button' class='buttonCancelledSuppressPost'> annuler </button><input type='hidden' 
+		name='suppressPostHiddenPostId' 
+		value='43' 
+		class='suppressPostHiddenPostId' 
+		placeholder=''
+		pattern=
+		required=''/></form><script> if(document.getElementById('buttonSuppressPost43').style.visibility != 'hidden')
+{
+	document.getElementById('formSuppressPost43').style.visibility = 'hidden';
+}
+document.getElementById('buttonSuppressPost43').onclick = function(){
+	document.getElementById('buttonSuppressPost43').style.visibility = 'hidden';
+	document.getElementById('formSuppressPost43').style.visibility = 'visible';
+
+}
+document.getElementById('buttonCanceledSuppressPost43').onclick = function(){
+	document.getElementById('buttonSuppressPost43').style.visibility = 'visible';
+	document.getElementById('formSuppressPost43').style.visibility = 'hidden';
+
+} </script></div><div id='42' class='divPost'><div id='' class='divLeft'><div id='' class='divHead'><p class='imgProfilPostP'><img src='../ImgProfil/332b067934cee629a69ba6113db7f1e520.jpg' class='imgProfilPost'></p><p class='date_publi'>Le : 2021-05-13 12:18:51, </p><p class='pseudo'>de : yumzi, </p><p class='title'>intitulé : opkdopejkcozrjkf.</p></div><p class='description'></p><div id='' class='divImg'></div></div><div id='' class='divRight'><form class='formSendComment' 
+		method='POST' 
+		action='Main?space=userinterface&section=profil#42'><input type='text' 
+		name='sendCommentEditText' 
+		value='' 
+		class='sendCommentEditText' 
+		placeholder='commenter'
+		pattern=
+		required=''/><input type='submit' 
+		name='sendCommentSubmitButton' 
+		value='Go' 
+		class='sendCommentSubmitButton' 
+		placeholder=''
+		pattern=
+		required=''/><input type='hidden' 
+		name='sendCommentHiddenPostId' 
+		value='42' 
+		class='sendCommentHiddenPostId' 
+		placeholder=''
+		pattern=
+		required=''/></form><div id='' class='divCom'></div></div><button id='buttonSuppressPost42' type='button' class='buttonSuppressPost'> suppimer </button><form 
+		id='formSuppressPost42'
+		class='formSuppressPost'
+		method='POST' 
+		action='Main?space=userinterface&section=profil&update=true'><input type='submit' 
+		name='suppressPostSubmitButton' 
+		value='confirmer' 
+		class='suppressPostSubmitButton' 
+		placeholder=''
+		pattern=
+		required=''/><button id='buttonCanceledSuppressPost42' type='button' class='buttonCancelledSuppressPost'> annuler </button><input type='hidden' 
+		name='suppressPostHiddenPostId' 
+		value='42' 
+		class='suppressPostHiddenPostId' 
+		placeholder=''
+		pattern=
+		required=''/></form><script> if(document.getElementById('buttonSuppressPost42').style.visibility != 'hidden')
+{
+	document.getElementById('formSuppressPost42').style.visibility = 'hidden';
+}
+document.getElementById('buttonSuppressPost42').onclick = function(){
+	document.getElementById('buttonSuppressPost42').style.visibility = 'hidden';
+	document.getElementById('formSuppressPost42').style.visibility = 'visible';
+
+}
+document.getElementById('buttonCanceledSuppressPost42').onclick = function(){
+	document.getElementById('buttonSuppressPost42').style.visibility = 'visible';
+	document.getElementById('formSuppressPost42').style.visibility = 'hidden';
+
+} </script></div><div id='41' class='divPost'><div id='' class='divLeft'><div id='' class='divHead'><p class='imgProfilPostP'><img src='../ImgProfil/332b067934cee629a69ba6113db7f1e520.jpg' class='imgProfilPost'></p><p class='date_publi'>Le : 2021-05-13 12:18:20, </p><p class='pseudo'>de : yumzi, </p><p class='title'>intitulé : jjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj.</p></div><p class='description'></p><div id='' class='divImg'></div></div><div id='' class='divRight'><form class='formSendComment' 
+		method='POST' 
+		action='Main?space=userinterface&section=profil#41'><input type='text' 
+		name='sendCommentEditText' 
+		value='' 
+		class='sendCommentEditText' 
+		placeholder='commenter'
+		pattern=
+		required=''/><input type='submit' 
+		name='sendCommentSubmitButton' 
+		value='Go' 
+		class='sendCommentSubmitButton' 
+		placeholder=''
+		pattern=
+		required=''/><input type='hidden' 
+		name='sendCommentHiddenPostId' 
+		value='41' 
+		class='sendCommentHiddenPostId' 
+		placeholder=''
+		pattern=
+		required=''/></form><div id='' class='divCom'></div></div><button id='buttonSuppressPost41' type='button' class='buttonSuppressPost'> suppimer </button><form 
+		id='formSuppressPost41'
+		class='formSuppressPost'
+		method='POST' 
+		action='Main?space=userinterface&section=profil&update=true'><input type='submit' 
+		name='suppressPostSubmitButton' 
+		value='confirmer' 
+		class='suppressPostSubmitButton' 
+		placeholder=''
+		pattern=
+		required=''/><button id='buttonCanceledSuppressPost41' type='button' class='buttonCancelledSuppressPost'> annuler </button><input type='hidden' 
+		name='suppressPostHiddenPostId' 
+		value='41' 
+		class='suppressPostHiddenPostId' 
+		placeholder=''
+		pattern=
+		required=''/></form><script> if(document.getElementById('buttonSuppressPost41').style.visibility != 'hidden')
+{
+	document.getElementById('formSuppressPost41').style.visibility = 'hidden';
+}
+document.getElementById('buttonSuppressPost41').onclick = function(){
+	document.getElementById('buttonSuppressPost41').style.visibility = 'hidden';
+	document.getElementById('formSuppressPost41').style.visibility = 'visible';
+
+}
+document.getElementById('buttonCanceledSuppressPost41').onclick = function(){
+	document.getElementById('buttonSuppressPost41').style.visibility = 'visible';
+	document.getElementById('formSuppressPost41').style.visibility = 'hidden';
+
+} </script></div><div id='40' class='divPost'><div id='' class='divLeft'><div id='' class='divHead'><p class='imgProfilPostP'><img src='../ImgProfil/332b067934cee629a69ba6113db7f1e520.jpg' class='imgProfilPost'></p><p class='date_publi'>Le : 2021-05-13 12:16:23, </p><p class='pseudo'>de : yumzi, </p><p class='title'>intitulé : dx.</p></div><p class='description'></p><div id='' class='divImg'></div></div><div id='' class='divRight'><form class='formSendComment' 
+		method='POST' 
+		action='Main?space=userinterface&section=profil#40'><input type='text' 
+		name='sendCommentEditText' 
+		value='' 
+		class='sendCommentEditText' 
+		placeholder='commenter'
+		pattern=
+		required=''/><input type='submit' 
+		name='sendCommentSubmitButton' 
+		value='Go' 
+		class='sendCommentSubmitButton' 
+		placeholder=''
+		pattern=
+		required=''/><input type='hidden' 
+		name='sendCommentHiddenPostId' 
+		value='40' 
+		class='sendCommentHiddenPostId' 
+		placeholder=''
+		pattern=
+		required=''/></form><div id='' class='divCom'></div></div><button id='buttonSuppressPost40' type='button' class='buttonSuppressPost'> suppimer </button><form 
+		id='formSuppressPost40'
+		class='formSuppressPost'
+		method='POST' 
+		action='Main?space=userinterface&section=profil&update=true'><input type='submit' 
+		name='suppressPostSubmitButton' 
+		value='confirmer' 
+		class='suppressPostSubmitButton' 
+		placeholder=''
+		pattern=
+		required=''/><button id='buttonCanceledSuppressPost40' type='button' class='buttonCancelledSuppressPost'> annuler </button><input type='hidden' 
+		name='suppressPostHiddenPostId' 
+		value='40' 
+		class='suppressPostHiddenPostId' 
+		placeholder=''
+		pattern=
+		required=''/></form><script> if(document.getElementById('buttonSuppressPost40').style.visibility != 'hidden')
+{
+	document.getElementById('formSuppressPost40').style.visibility = 'hidden';
+}
+document.getElementById('buttonSuppressPost40').onclick = function(){
+	document.getElementById('buttonSuppressPost40').style.visibility = 'hidden';
+	document.getElementById('formSuppressPost40').style.visibility = 'visible';
+
+}
+document.getElementById('buttonCanceledSuppressPost40').onclick = function(){
+	document.getElementById('buttonSuppressPost40').style.visibility = 'visible';
+	document.getElementById('formSuppressPost40').style.visibility = 'hidden';
+
+} </script></div><div id='39' class='divPost'><div id='' class='divLeft'><div id='' class='divHead'><p class='imgProfilPostP'><img src='../ImgProfil/332b067934cee629a69ba6113db7f1e520.jpg' class='imgProfilPost'></p><p class='date_publi'>Le : 2021-05-13 12:15:54, </p><p class='pseudo'>de : yumzi, </p><p class='title'>intitulé : kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk.</p></div><p class='description'></p><div id='' class='divImg'></div></div><div id='' class='divRight'><form class='formSendComment' 
+		method='POST' 
+		action='Main?space=userinterface&section=profil#39'><input type='text' 
+		name='sendCommentEditText' 
+		value='' 
+		class='sendCommentEditText' 
+		placeholder='commenter'
+		pattern=
+		required=''/><input type='submit' 
+		name='sendCommentSubmitButton' 
+		value='Go' 
+		class='sendCommentSubmitButton' 
+		placeholder=''
+		pattern=
+		required=''/><input type='hidden' 
+		name='sendCommentHiddenPostId' 
+		value='39' 
+		class='sendCommentHiddenPostId' 
+		placeholder=''
+		pattern=
+		required=''/></form><div id='' class='divCom'></div></div><button id='buttonSuppressPost39' type='button' class='buttonSuppressPost'> suppimer </button><form 
+		id='formSuppressPost39'
+		class='formSuppressPost'
+		method='POST' 
+		action='Main?space=userinterface&section=profil&update=true'><input type='submit' 
+		name='suppressPostSubmitButton' 
+		value='confirmer' 
+		class='suppressPostSubmitButton' 
+		placeholder=''
+		pattern=
+		required=''/><button id='buttonCanceledSuppressPost39' type='button' class='buttonCancelledSuppressPost'> annuler </button><input type='hidden' 
+		name='suppressPostHiddenPostId' 
+		value='39' 
+		class='suppressPostHiddenPostId' 
+		placeholder=''
+		pattern=
+		required=''/></form><script> if(document.getElementById('buttonSuppressPost39').style.visibility != 'hidden')
+{
+	document.getElementById('formSuppressPost39').style.visibility = 'hidden';
+}
+document.getElementById('buttonSuppressPost39').onclick = function(){
+	document.getElementById('buttonSuppressPost39').style.visibility = 'hidden';
+	document.getElementById('formSuppressPost39').style.visibility = 'visible';
+
+}
+document.getElementById('buttonCanceledSuppressPost39').onclick = function(){
+	document.getElementById('buttonSuppressPost39').style.visibility = 'visible';
+	document.getElementById('formSuppressPost39').style.visibility = 'hidden';
+
+} </script></div><div id='38' class='divPost'><div id='' class='divLeft'><div id='' class='divHead'><p class='imgProfilPostP'><img src='../ImgProfil/332b067934cee629a69ba6113db7f1e520.jpg' class='imgProfilPost'></p><p class='date_publi'>Le : 2021-05-13 12:14:35, </p><p class='pseudo'>de : yumzi, </p><p class='title'>intitulé : yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy.</p></div><p class='description'></p><div id='' class='divImg'></div></div><div id='' class='divRight'><form class='formSendComment' 
+		method='POST' 
+		action='Main?space=userinterface&section=profil#38'><input type='text' 
+		name='sendCommentEditText' 
+		value='' 
+		class='sendCommentEditText' 
+		placeholder='commenter'
+		pattern=
+		required=''/><input type='submit' 
+		name='sendCommentSubmitButton' 
+		value='Go' 
+		class='sendCommentSubmitButton' 
+		placeholder=''
+		pattern=
+		required=''/><input type='hidden' 
+		name='sendCommentHiddenPostId' 
+		value='38' 
+		class='sendCommentHiddenPostId' 
+		placeholder=''
+		pattern=
+		required=''/></form><div id='' class='divCom'></div></div><button id='buttonSuppressPost38' type='button' class='buttonSuppressPost'> suppimer </button><form 
+		id='formSuppressPost38'
+		class='formSuppressPost'
+		method='POST' 
+		action='Main?space=userinterface&section=profil&update=true'><input type='submit' 
+		name='suppressPostSubmitButton' 
+		value='confirmer' 
+		class='suppressPostSubmitButton' 
+		placeholder=''
+		pattern=
+		required=''/><button id='buttonCanceledSuppressPost38' type='button' class='buttonCancelledSuppressPost'> annuler </button><input type='hidden' 
+		name='suppressPostHiddenPostId' 
+		value='38' 
+		class='suppressPostHiddenPostId' 
+		placeholder=''
+		pattern=
+		required=''/></form><script> if(document.getElementById('buttonSuppressPost38').style.visibility != 'hidden')
+{
+	document.getElementById('formSuppressPost38').style.visibility = 'hidden';
+}
+document.getElementById('buttonSuppressPost38').onclick = function(){
+	document.getElementById('buttonSuppressPost38').style.visibility = 'hidden';
+	document.getElementById('formSuppressPost38').style.visibility = 'visible';
+
+}
+document.getElementById('buttonCanceledSuppressPost38').onclick = function(){
+	document.getElementById('buttonSuppressPost38').style.visibility = 'visible';
+	document.getElementById('formSuppressPost38').style.visibility = 'hidden';
+
+} </script></div><div id='37' class='divPost'><div id='' class='divLeft'><div id='' class='divHead'><p class='imgProfilPostP'><img src='../ImgProfil/332b067934cee629a69ba6113db7f1e520.jpg' class='imgProfilPost'></p><p class='date_publi'>Le : 2021-05-13 12:12:01, </p><p class='pseudo'>de : yumzi, </p><p class='title'>intitulé : pppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppp.</p></div><p class='description'></p><div id='' class='divImg'></div></div><div id='' class='divRight'><form class='formSendComment' 
+		method='POST' 
+		action='Main?space=userinterface&section=profil#37'><input type='text' 
+		name='sendCommentEditText' 
+		value='' 
+		class='sendCommentEditText' 
+		placeholder='commenter'
+		pattern=
+		required=''/><input type='submit' 
+		name='sendCommentSubmitButton' 
+		value='Go' 
+		class='sendCommentSubmitButton' 
+		placeholder=''
+		pattern=
+		required=''/><input type='hidden' 
+		name='sendCommentHiddenPostId' 
+		value='37' 
+		class='sendCommentHiddenPostId' 
+		placeholder=''
+		pattern=
+		required=''/></form><div id='' class='divCom'></div></div><button id='buttonSuppressPost37' type='button' class='buttonSuppressPost'> suppimer </button><form 
+		id='formSuppressPost37'
+		class='formSuppressPost'
+		method='POST' 
+		action='Main?space=userinterface&section=profil&update=true'><input type='submit' 
+		name='suppressPostSubmitButton' 
+		value='confirmer' 
+		class='suppressPostSubmitButton' 
+		placeholder=''
+		pattern=
+		required=''/><button id='buttonCanceledSuppressPost37' type='button' class='buttonCancelledSuppressPost'> annuler </button><input type='hidden' 
+		name='suppressPostHiddenPostId' 
+		value='37' 
+		class='suppressPostHiddenPostId' 
+		placeholder=''
+		pattern=
+		required=''/></form><script> if(document.getElementById('buttonSuppressPost37').style.visibility != 'hidden')
+{
+	document.getElementById('formSuppressPost37').style.visibility = 'hidden';
+}
+document.getElementById('buttonSuppressPost37').onclick = function(){
+	document.getElementById('buttonSuppressPost37').style.visibility = 'hidden';
+	document.getElementById('formSuppressPost37').style.visibility = 'visible';
+
+}
+document.getElementById('buttonCanceledSuppressPost37').onclick = function(){
+	document.getElementById('buttonSuppressPost37').style.visibility = 'visible';
+	document.getElementById('formSuppressPost37').style.visibility = 'hidden';
+
+} </script></div><div id='36' class='divPost'><div id='' class='divLeft'><div id='' class='divHead'><p class='imgProfilPostP'><img src='../ImgProfil/332b067934cee629a69ba6113db7f1e520.jpg' class='imgProfilPost'></p><p class='date_publi'>Le : 2021-05-13 12:11:25, </p><p class='pseudo'>de : yumzi, </p><p class='title'>intitulé : njjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj.</p></div><p class='description'></p><div id='' class='divImg'></div></div><div id='' class='divRight'><form class='formSendComment' 
+		method='POST' 
+		action='Main?space=userinterface&section=profil#36'><input type='text' 
+		name='sendCommentEditText' 
+		value='' 
+		class='sendCommentEditText' 
+		placeholder='commenter'
+		pattern=
+		required=''/><input type='submit' 
+		name='sendCommentSubmitButton' 
+		value='Go' 
+		class='sendCommentSubmitButton' 
+		placeholder=''
+		pattern=
+		required=''/><input type='hidden' 
+		name='sendCommentHiddenPostId' 
+		value='36' 
+		class='sendCommentHiddenPostId' 
+		placeholder=''
+		pattern=
+		required=''/></form><div id='' class='divCom'></div></div><button id='buttonSuppressPost36' type='button' class='buttonSuppressPost'> suppimer </button><form 
+		id='formSuppressPost36'
+		class='formSuppressPost'
+		method='POST' 
+		action='Main?space=userinterface&section=profil&update=true'><input type='submit' 
+		name='suppressPostSubmitButton' 
+		value='confirmer' 
+		class='suppressPostSubmitButton' 
+		placeholder=''
+		pattern=
+		required=''/><button id='buttonCanceledSuppressPost36' type='button' class='buttonCancelledSuppressPost'> annuler </button><input type='hidden' 
+		name='suppressPostHiddenPostId' 
+		value='36' 
+		class='suppressPostHiddenPostId' 
+		placeholder=''
+		pattern=
+		required=''/></form><script> if(document.getElementById('buttonSuppressPost36').style.visibility != 'hidden')
+{
+	document.getElementById('formSuppressPost36').style.visibility = 'hidden';
+}
+document.getElementById('buttonSuppressPost36').onclick = function(){
+	document.getElementById('buttonSuppressPost36').style.visibility = 'hidden';
+	document.getElementById('formSuppressPost36').style.visibility = 'visible';
+
+}
+document.getElementById('buttonCanceledSuppressPost36').onclick = function(){
+	document.getElementById('buttonSuppressPost36').style.visibility = 'visible';
+	document.getElementById('formSuppressPost36').style.visibility = 'hidden';
+
+} </script></div><div id='35' class='divPost'><div id='' class='divLeft'><div id='' class='divHead'><p class='imgProfilPostP'><img src='../ImgProfil/332b067934cee629a69ba6113db7f1e520.jpg' class='imgProfilPost'></p><p class='date_publi'>Le : 2021-05-13 12:06:54, </p><p class='pseudo'>de : yumzi, </p><p class='title'>intitulé : hgjkhkhgjhgggggggggggggggggggggggggg jjjhhhhhhhhhhhhhh.</p></div><p class='description'></p><div id='' class='divImg'></div></div><div id='' class='divRight'><form class='formSendComment' 
+		method='POST' 
+		action='Main?space=userinterface&section=profil#35'><input type='text' 
+		name='sendCommentEditText' 
+		value='' 
+		class='sendCommentEditText' 
+		placeholder='commenter'
+		pattern=
+		required=''/><input type='submit' 
+		name='sendCommentSubmitButton' 
+		value='Go' 
+		class='sendCommentSubmitButton' 
+		placeholder=''
+		pattern=
+		required=''/><input type='hidden' 
+		name='sendCommentHiddenPostId' 
+		value='35' 
+		class='sendCommentHiddenPostId' 
+		placeholder=''
+		pattern=
+		required=''/></form><div id='' class='divCom'></div></div><button id='buttonSuppressPost35' type='button' class='buttonSuppressPost'> suppimer </button><form 
+		id='formSuppressPost35'
+		class='formSuppressPost'
+		method='POST' 
+		action='Main?space=userinterface&section=profil&update=true'><input type='submit' 
+		name='suppressPostSubmitButton' 
+		value='confirmer' 
+		class='suppressPostSubmitButton' 
+		placeholder=''
+		pattern=
+		required=''/><button id='buttonCanceledSuppressPost35' type='button' class='buttonCancelledSuppressPost'> annuler </button><input type='hidden' 
+		name='suppressPostHiddenPostId' 
+		value='35' 
+		class='suppressPostHiddenPostId' 
+		placeholder=''
+		pattern=
+		required=''/></form><script> if(document.getElementById('buttonSuppressPost35').style.visibility != 'hidden')
+{
+	document.getElementById('formSuppressPost35').style.visibility = 'hidden';
+}
+document.getElementById('buttonSuppressPost35').onclick = function(){
+	document.getElementById('buttonSuppressPost35').style.visibility = 'hidden';
+	document.getElementById('formSuppressPost35').style.visibility = 'visible';
+
+}
+document.getElementById('buttonCanceledSuppressPost35').onclick = function(){
+	document.getElementById('buttonSuppressPost35').style.visibility = 'visible';
+	document.getElementById('formSuppressPost35').style.visibility = 'hidden';
+
+} </script></div><div id='34' class='divPost'><div id='' class='divLeft'><div id='' class='divHead'><p class='imgProfilPostP'><img src='../ImgProfil/332b067934cee629a69ba6113db7f1e520.jpg' class='imgProfilPost'></p><p class='date_publi'>Le : 2021-05-13 12:06:27, </p><p class='pseudo'>de : yumzi, </p><p class='title'>intitulé : iiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii.</p></div><p class='description'></p><div id='' class='divImg'></div></div><div id='' class='divRight'><form class='formSendComment' 
+		method='POST' 
+		action='Main?space=userinterface&section=profil#34'><input type='text' 
+		name='sendCommentEditText' 
+		value='' 
+		class='sendCommentEditText' 
+		placeholder='commenter'
+		pattern=
+		required=''/><input type='submit' 
+		name='sendCommentSubmitButton' 
+		value='Go' 
+		class='sendCommentSubmitButton' 
+		placeholder=''
+		pattern=
+		required=''/><input type='hidden' 
+		name='sendCommentHiddenPostId' 
+		value='34' 
+		class='sendCommentHiddenPostId' 
+		placeholder=''
+		pattern=
+		required=''/></form><div id='' class='divCom'></div></div><button id='buttonSuppressPost34' type='button' class='buttonSuppressPost'> suppimer </button><form 
+		id='formSuppressPost34'
+		class='formSuppressPost'
+		method='POST' 
+		action='Main?space=userinterface&section=profil&update=true'><input type='submit' 
+		name='suppressPostSubmitButton' 
+		value='confirmer' 
+		class='suppressPostSubmitButton' 
+		placeholder=''
+		pattern=
+		required=''/><button id='buttonCanceledSuppressPost34' type='button' class='buttonCancelledSuppressPost'> annuler </button><input type='hidden' 
+		name='suppressPostHiddenPostId' 
+		value='34' 
+		class='suppressPostHiddenPostId' 
+		placeholder=''
+		pattern=
+		required=''/></form><script> if(document.getElementById('buttonSuppressPost34').style.visibility != 'hidden')
+{
+	document.getElementById('formSuppressPost34').style.visibility = 'hidden';
+}
+document.getElementById('buttonSuppressPost34').onclick = function(){
+	document.getElementById('buttonSuppressPost34').style.visibility = 'hidden';
+	document.getElementById('formSuppressPost34').style.visibility = 'visible';
+
+}
+document.getElementById('buttonCanceledSuppressPost34').onclick = function(){
+	document.getElementById('buttonSuppressPost34').style.visibility = 'visible';
+	document.getElementById('formSuppressPost34').style.visibility = 'hidden';
+
+} </script></div><div id='17' class='divPost'><div id='' class='divLeft'><div id='' class='divHead'><p class='imgProfilPostP'><img src='../ImgProfil/332b067934cee629a69ba6113db7f1e520.jpg' class='imgProfilPost'></p><p class='date_publi'>Le : 2021-05-10 09:49:46, </p><p class='pseudo'>de : yumzi, </p><p class='title'>intitulé : vxcvdsdgx.</p></div><p class='description'>fgsfgdgrg</p><div id='' class='divImg'></div></div><div id='' class='divRight'><form class='formSendComment' 
+		method='POST' 
+		action='Main?space=userinterface&section=profil#17'><input type='text' 
+		name='sendCommentEditText' 
+		value='' 
+		class='sendCommentEditText' 
+		placeholder='commenter'
+		pattern=
+		required=''/><input type='submit' 
+		name='sendCommentSubmitButton' 
+		value='Go' 
+		class='sendCommentSubmitButton' 
+		placeholder=''
+		pattern=
+		required=''/><input type='hidden' 
+		name='sendCommentHiddenPostId' 
+		value='17' 
+		class='sendCommentHiddenPostId' 
+		placeholder=''
+		pattern=
+		required=''/></form><div id='' class='divCom'><div id='' class='divComment'><p class='pseudo'>yumzi</p><p class='date'>2021-05-12 21:40:23</p><p class='text'>comment ca</p></div><div id='' class='divComment'><p class='pseudo'>yumzi</p><p class='date'>2021-05-12 22:25:57</p><p class='text'></p></div></div></div><button id='buttonSuppressPost17' type='button' class='buttonSuppressPost'> suppimer </button><form 
+		id='formSuppressPost17'
+		class='formSuppressPost'
+		method='POST' 
+		action='Main?space=userinterface&section=profil&update=true'><input type='submit' 
+		name='suppressPostSubmitButton' 
+		value='confirmer' 
+		class='suppressPostSubmitButton' 
+		placeholder=''
+		pattern=
+		required=''/><button id='buttonCanceledSuppressPost17' type='button' class='buttonCancelledSuppressPost'> annuler </button><input type='hidden' 
+		name='suppressPostHiddenPostId' 
+		value='17' 
+		class='suppressPostHiddenPostId' 
+		placeholder=''
+		pattern=
+		required=''/></form><script> if(document.getElementById('buttonSuppressPost17').style.visibility != 'hidden')
+{
+	document.getElementById('formSuppressPost17').style.visibility = 'hidden';
+}
+document.getElementById('buttonSuppressPost17').onclick = function(){
+	document.getElementById('buttonSuppressPost17').style.visibility = 'hidden';
+	document.getElementById('formSuppressPost17').style.visibility = 'visible';
+
+}
+document.getElementById('buttonCanceledSuppressPost17').onclick = function(){
+	document.getElementById('buttonSuppressPost17').style.visibility = 'visible';
+	document.getElementById('formSuppressPost17').style.visibility = 'hidden';
+
+} </script></div><div id='16' class='divPost'><div id='' class='divLeft'><div id='' class='divHead'><p class='imgProfilPostP'><img src='../ImgProfil/332b067934cee629a69ba6113db7f1e520.jpg' class='imgProfilPost'></p><p class='date_publi'>Le : 2021-05-08 15:50:03, </p><p class='pseudo'>de : yumzi, </p><p class='title'>intitulé : ksjkjsXl.</p></div><p class='description'>sLKXJSKjx</p><div id='' class='divImg'></div></div><div id='' class='divRight'><form class='formSendComment' 
+		method='POST' 
+		action='Main?space=userinterface&section=profil#16'><input type='text' 
+		name='sendCommentEditText' 
+		value='' 
+		class='sendCommentEditText' 
+		placeholder='commenter'
+		pattern=
+		required=''/><input type='submit' 
+		name='sendCommentSubmitButton' 
+		value='Go' 
+		class='sendCommentSubmitButton' 
+		placeholder=''
+		pattern=
+		required=''/><input type='hidden' 
+		name='sendCommentHiddenPostId' 
+		value='16' 
+		class='sendCommentHiddenPostId' 
+		placeholder=''
+		pattern=
+		required=''/></form><div id='' class='divCom'><div id='' class='divComment'><p class='pseudo'>yumzi</p><p class='date'>2021-05-12 21:40:28</p><p class='text'>sdqfdf</p></div></div></div><button id='buttonSuppressPost16' type='button' class='buttonSuppressPost'> suppimer </button><form 
+		id='formSuppressPost16'
+		class='formSuppressPost'
+		method='POST' 
+		action='Main?space=userinterface&section=profil&update=true'><input type='submit' 
+		name='suppressPostSubmitButton' 
+		value='confirmer' 
+		class='suppressPostSubmitButton' 
+		placeholder=''
+		pattern=
+		required=''/><button id='buttonCanceledSuppressPost16' type='button' class='buttonCancelledSuppressPost'> annuler </button><input type='hidden' 
+		name='suppressPostHiddenPostId' 
+		value='16' 
+		class='suppressPostHiddenPostId' 
+		placeholder=''
+		pattern=
+		required=''/></form><script> if(document.getElementById('buttonSuppressPost16').style.visibility != 'hidden')
+{
+	document.getElementById('formSuppressPost16').style.visibility = 'hidden';
+}
+document.getElementById('buttonSuppressPost16').onclick = function(){
+	document.getElementById('buttonSuppressPost16').style.visibility = 'hidden';
+	document.getElementById('formSuppressPost16').style.visibility = 'visible';
+
+}
+document.getElementById('buttonCanceledSuppressPost16').onclick = function(){
+	document.getElementById('buttonSuppressPost16').style.visibility = 'visible';
+	document.getElementById('formSuppressPost16').style.visibility = 'hidden';
+
+} </script></div><div id='15' class='divPost'><div id='' class='divLeft'><div id='' class='divHead'><p class='imgProfilPostP'><img src='../ImgProfil/332b067934cee629a69ba6113db7f1e520.jpg' class='imgProfilPost'></p><p class='date_publi'>Le : 2021-05-08 15:49:53, </p><p class='pseudo'>de : yumzi, </p><p class='title'>intitulé : LSk,klsq.</p></div><p class='description'>sqlkxjs</p><div id='' class='divImg'></div></div><div id='' class='divRight'><form class='formSendComment' 
+		method='POST' 
+		action='Main?space=userinterface&section=profil#15'><input type='text' 
+		name='sendCommentEditText' 
+		value='' 
+		class='sendCommentEditText' 
+		placeholder='commenter'
+		pattern=
+		required=''/><input type='submit' 
+		name='sendCommentSubmitButton' 
+		value='Go' 
+		class='sendCommentSubmitButton' 
+		placeholder=''
+		pattern=
+		required=''/><input type='hidden' 
+		name='sendCommentHiddenPostId' 
+		value='15' 
+		class='sendCommentHiddenPostId' 
+		placeholder=''
+		pattern=
+		required=''/></form><div id='' class='divCom'></div></div><button id='buttonSuppressPost15' type='button' class='buttonSuppressPost'> suppimer </button><form 
+		id='formSuppressPost15'
+		class='formSuppressPost'
+		method='POST' 
+		action='Main?space=userinterface&section=profil&update=true'><input type='submit' 
+		name='suppressPostSubmitButton' 
+		value='confirmer' 
+		class='suppressPostSubmitButton' 
+		placeholder=''
+		pattern=
+		required=''/><button id='buttonCanceledSuppressPost15' type='button' class='buttonCancelledSuppressPost'> annuler </button><input type='hidden' 
+		name='suppressPostHiddenPostId' 
+		value='15' 
+		class='suppressPostHiddenPostId' 
+		placeholder=''
+		pattern=
+		required=''/></form><script> if(document.getElementById('buttonSuppressPost15').style.visibility != 'hidden')
+{
+	document.getElementById('formSuppressPost15').style.visibility = 'hidden';
+}
+document.getElementById('buttonSuppressPost15').onclick = function(){
+	document.getElementById('buttonSuppressPost15').style.visibility = 'hidden';
+	document.getElementById('formSuppressPost15').style.visibility = 'visible';
+
+}
+document.getElementById('buttonCanceledSuppressPost15').onclick = function(){
+	document.getElementById('buttonSuppressPost15').style.visibility = 'visible';
+	document.getElementById('formSuppressPost15').style.visibility = 'hidden';
+
+} </script></div><div id='14' class='divPost'><div id='' class='divLeft'><div id='' class='divHead'><p class='imgProfilPostP'><img src='../ImgProfil/332b067934cee629a69ba6113db7f1e520.jpg' class='imgProfilPost'></p><p class='date_publi'>Le : 2021-05-08 15:48:06, </p><p class='pseudo'>de : yumzi, </p><p class='title'>intitulé : kjqsoijd<sls.</p></div><p class='description'>os<idjiosjq</p><div id='' class='divImg'></div></div><div id='' class='divRight'><form class='formSendComment' 
+		method='POST' 
+		action='Main?space=userinterface&section=profil#14'><input type='text' 
+		name='sendCommentEditText' 
+		value='' 
+		class='sendCommentEditText' 
+		placeholder='commenter'
+		pattern=
+		required=''/><input type='submit' 
+		name='sendCommentSubmitButton' 
+		value='Go' 
+		class='sendCommentSubmitButton' 
+		placeholder=''
+		pattern=
+		required=''/><input type='hidden' 
+		name='sendCommentHiddenPostId' 
+		value='14' 
+		class='sendCommentHiddenPostId' 
+		placeholder=''
+		pattern=
+		required=''/></form><div id='' class='divCom'></div></div><button id='buttonSuppressPost14' type='button' class='buttonSuppressPost'> suppimer </button><form 
+		id='formSuppressPost14'
+		class='formSuppressPost'
+		method='POST' 
+		action='Main?space=userinterface&section=profil&update=true'><input type='submit' 
+		name='suppressPostSubmitButton' 
+		value='confirmer' 
+		class='suppressPostSubmitButton' 
+		placeholder=''
+		pattern=
+		required=''/><button id='buttonCanceledSuppressPost14' type='button' class='buttonCancelledSuppressPost'> annuler </button><input type='hidden' 
+		name='suppressPostHiddenPostId' 
+		value='14' 
+		class='suppressPostHiddenPostId' 
+		placeholder=''
+		pattern=
+		required=''/></form><script> if(document.getElementById('buttonSuppressPost14').style.visibility != 'hidden')
+{
+	document.getElementById('formSuppressPost14').style.visibility = 'hidden';
+}
+document.getElementById('buttonSuppressPost14').onclick = function(){
+	document.getElementById('buttonSuppressPost14').style.visibility = 'hidden';
+	document.getElementById('formSuppressPost14').style.visibility = 'visible';
+
+}
+document.getElementById('buttonCanceledSuppressPost14').onclick = function(){
+	document.getElementById('buttonSuppressPost14').style.visibility = 'visible';
+	document.getElementById('formSuppressPost14').style.visibility = 'hidden';
+
+} </script></div><div id='13' class='divPost'><div id='' class='divLeft'><div id='' class='divHead'><p class='imgProfilPostP'><img src='../ImgProfil/332b067934cee629a69ba6113db7f1e520.jpg' class='imgProfilPost'></p><p class='date_publi'>Le : 2021-05-08 15:41:31, </p><p class='pseudo'>de : yumzi, </p><p class='title'>intitulé : ;jkjk.</p></div><p class='description'>kjjkh</p><div id='' class='divImg'></div></div><div id='' class='divRight'><form class='formSendComment' 
+		method='POST' 
+		action='Main?space=userinterface&section=profil#13'><input type='text' 
+		name='sendCommentEditText' 
+		value='' 
+		class='sendCommentEditText' 
+		placeholder='commenter'
+		pattern=
+		required=''/><input type='submit' 
+		name='sendCommentSubmitButton' 
+		value='Go' 
+		class='sendCommentSubmitButton' 
+		placeholder=''
+		pattern=
+		required=''/><input type='hidden' 
+		name='sendCommentHiddenPostId' 
+		value='13' 
+		class='sendCommentHiddenPostId' 
+		placeholder=''
+		pattern=
+		required=''/></form><div id='' class='divCom'><div id='' class='divComment'><p class='pseudo'>yumzi</p><p class='date'>2021-05-08 15:47:05</p><p class='text'>lkjlk</p></div></div></div><button id='buttonSuppressPost13' type='button' class='buttonSuppressPost'> suppimer </button><form 
+		id='formSuppressPost13'
+		class='formSuppressPost'
+		method='POST' 
+		action='Main?space=userinterface&section=profil&update=true'><input type='submit' 
+		name='suppressPostSubmitButton' 
+		value='confirmer' 
+		class='suppressPostSubmitButton' 
+		placeholder=''
+		pattern=
+		required=''/><button id='buttonCanceledSuppressPost13' type='button' class='buttonCancelledSuppressPost'> annuler </button><input type='hidden' 
+		name='suppressPostHiddenPostId' 
+		value='13' 
+		class='suppressPostHiddenPostId' 
+		placeholder=''
+		pattern=
+		required=''/></form><script> if(document.getElementById('buttonSuppressPost13').style.visibility != 'hidden')
+{
+	document.getElementById('formSuppressPost13').style.visibility = 'hidden';
+}
+document.getElementById('buttonSuppressPost13').onclick = function(){
+	document.getElementById('buttonSuppressPost13').style.visibility = 'hidden';
+	document.getElementById('formSuppressPost13').style.visibility = 'visible';
+
+}
+document.getElementById('buttonCanceledSuppressPost13').onclick = function(){
+	document.getElementById('buttonSuppressPost13').style.visibility = 'visible';
+	document.getElementById('formSuppressPost13').style.visibility = 'hidden';
+
+} </script></div><div id='12' class='divPost'><div id='' class='divLeft'><div id='' class='divHead'><p class='imgProfilPostP'><img src='../ImgProfil/332b067934cee629a69ba6113db7f1e520.jpg' class='imgProfilPost'></p><p class='date_publi'>Le : 2021-05-08 11:57:58, </p><p class='pseudo'>de : yumzi, </p><p class='title'>intitulé : fzfef.</p></div><p class='description'>zdvsvefrgt</p><div id='' class='divImg'></div></div><div id='' class='divRight'><form class='formSendComment' 
+		method='POST' 
+		action='Main?space=userinterface&section=profil#12'><input type='text' 
+		name='sendCommentEditText' 
+		value='' 
+		class='sendCommentEditText' 
+		placeholder='commenter'
+		pattern=
+		required=''/><input type='submit' 
+		name='sendCommentSubmitButton' 
+		value='Go' 
+		class='sendCommentSubmitButton' 
+		placeholder=''
+		pattern=
+		required=''/><input type='hidden' 
+		name='sendCommentHiddenPostId' 
+		value='12' 
+		class='sendCommentHiddenPostId' 
+		placeholder=''
+		pattern=
+		required=''/></form><div id='' class='divCom'></div></div><button id='buttonSuppressPost12' type='button' class='buttonSuppressPost'> suppimer </button><form 
+		id='formSuppressPost12'
+		class='formSuppressPost'
+		method='POST' 
+		action='Main?space=userinterface&section=profil&update=true'><input type='submit' 
+		name='suppressPostSubmitButton' 
+		value='confirmer' 
+		class='suppressPostSubmitButton' 
+		placeholder=''
+		pattern=
+		required=''/><button id='buttonCanceledSuppressPost12' type='button' class='buttonCancelledSuppressPost'> annuler </button><input type='hidden' 
+		name='suppressPostHiddenPostId' 
+		value='12' 
+		class='suppressPostHiddenPostId' 
+		placeholder=''
+		pattern=
+		required=''/></form><script> if(document.getElementById('buttonSuppressPost12').style.visibility != 'hidden')
+{
+	document.getElementById('formSuppressPost12').style.visibility = 'hidden';
+}
+document.getElementById('buttonSuppressPost12').onclick = function(){
+	document.getElementById('buttonSuppressPost12').style.visibility = 'hidden';
+	document.getElementById('formSuppressPost12').style.visibility = 'visible';
+
+}
+document.getElementById('buttonCanceledSuppressPost12').onclick = function(){
+	document.getElementById('buttonSuppressPost12').style.visibility = 'visible';
+	document.getElementById('formSuppressPost12').style.visibility = 'hidden';
+
+} </script></div><div id='11' class='divPost'><div id='' class='divLeft'><div id='' class='divHead'><p class='imgProfilPostP'><img src='../ImgProfil/332b067934cee629a69ba6113db7f1e520.jpg' class='imgProfilPost'></p><p class='date_publi'>Le : 2021-05-07 15:07:15, </p><p class='pseudo'>de : yumzi, </p><p class='title'>intitulé : uygufy.</p></div><p class='description'>kjguigyluy</p><div id='' class='divImg'></div></div><div id='' class='divRight'><form class='formSendComment' 
+		method='POST' 
+		action='Main?space=userinterface&section=profil#11'><input type='text' 
+		name='sendCommentEditText' 
+		value='' 
+		class='sendCommentEditText' 
+		placeholder='commenter'
+		pattern=
+		required=''/><input type='submit' 
+		name='sendCommentSubmitButton' 
+		value='Go' 
+		class='sendCommentSubmitButton' 
+		placeholder=''
+		pattern=
+		required=''/><input type='hidden' 
+		name='sendCommentHiddenPostId' 
+		value='11' 
+		class='sendCommentHiddenPostId' 
+		placeholder=''
+		pattern=
+		required=''/></form><div id='' class='divCom'></div></div><button id='buttonSuppressPost11' type='button' class='buttonSuppressPost'> suppimer </button><form 
+		id='formSuppressPost11'
+		class='formSuppressPost'
+		method='POST' 
+		action='Main?space=userinterface&section=profil&update=true'><input type='submit' 
+		name='suppressPostSubmitButton' 
+		value='confirmer' 
+		class='suppressPostSubmitButton' 
+		placeholder=''
+		pattern=
+		required=''/><button id='buttonCanceledSuppressPost11' type='button' class='buttonCancelledSuppressPost'> annuler </button><input type='hidden' 
+		name='suppressPostHiddenPostId' 
+		value='11' 
+		class='suppressPostHiddenPostId' 
+		placeholder=''
+		pattern=
+		required=''/></form><script> if(document.getElementById('buttonSuppressPost11').style.visibility != 'hidden')
+{
+	document.getElementById('formSuppressPost11').style.visibility = 'hidden';
+}
+document.getElementById('buttonSuppressPost11').onclick = function(){
+	document.getElementById('buttonSuppressPost11').style.visibility = 'hidden';
+	document.getElementById('formSuppressPost11').style.visibility = 'visible';
+
+}
+document.getElementById('buttonCanceledSuppressPost11').onclick = function(){
+	document.getElementById('buttonSuppressPost11').style.visibility = 'visible';
+	document.getElementById('formSuppressPost11').style.visibility = 'hidden';
+
+} </script></div><div id='10' class='divPost'><div id='' class='divLeft'><div id='' class='divHead'><p class='imgProfilPostP'><img src='../ImgProfil/332b067934cee629a69ba6113db7f1e520.jpg' class='imgProfilPost'></p><p class='date_publi'>Le : 2021-05-07 12:53:18, </p><p class='pseudo'>de : yumzi, </p><p class='title'>intitulé : smadl;zdl.</p></div><p class='description'>mdqlld</p><div id='' class='divImg'></div></div><div id='' class='divRight'><form class='formSendComment' 
+		method='POST' 
+		action='Main?space=userinterface&section=profil#10'><input type='text' 
+		name='sendCommentEditText' 
+		value='' 
+		class='sendCommentEditText' 
+		placeholder='commenter'
+		pattern=
+		required=''/><input type='submit' 
+		name='sendCommentSubmitButton' 
+		value='Go' 
+		class='sendCommentSubmitButton' 
+		placeholder=''
+		pattern=
+		required=''/><input type='hidden' 
+		name='sendCommentHiddenPostId' 
+		value='10' 
+		class='sendCommentHiddenPostId' 
+		placeholder=''
+		pattern=
+		required=''/></form><div id='' class='divCom'></div></div><button id='buttonSuppressPost10' type='button' class='buttonSuppressPost'> suppimer </button><form 
+		id='formSuppressPost10'
+		class='formSuppressPost'
+		method='POST' 
+		action='Main?space=userinterface&section=profil&update=true'><input type='submit' 
+		name='suppressPostSubmitButton' 
+		value='confirmer' 
+		class='suppressPostSubmitButton' 
+		placeholder=''
+		pattern=
+		required=''/><button id='buttonCanceledSuppressPost10' type='button' class='buttonCancelledSuppressPost'> annuler </button><input type='hidden' 
+		name='suppressPostHiddenPostId' 
+		value='10' 
+		class='suppressPostHiddenPostId' 
+		placeholder=''
+		pattern=
+		required=''/></form><script> if(document.getElementById('buttonSuppressPost10').style.visibility != 'hidden')
+{
+	document.getElementById('formSuppressPost10').style.visibility = 'hidden';
+}
+document.getElementById('buttonSuppressPost10').onclick = function(){
+	document.getElementById('buttonSuppressPost10').style.visibility = 'hidden';
+	document.getElementById('formSuppressPost10').style.visibility = 'visible';
+
+}
+document.getElementById('buttonCanceledSuppressPost10').onclick = function(){
+	document.getElementById('buttonSuppressPost10').style.visibility = 'visible';
+	document.getElementById('formSuppressPost10').style.visibility = 'hidden';
+
+} </script></div><div id='9' class='divPost'><div id='' class='divLeft'><div id='' class='divHead'><p class='imgProfilPostP'><img src='../ImgProfil/332b067934cee629a69ba6113db7f1e520.jpg' class='imgProfilPost'></p><p class='date_publi'>Le : 2021-05-07 11:59:06, </p><p class='pseudo'>de : yumzi, </p><p class='title'>intitulé : Nouveau post.</p></div><p class='description'>JJJJJ</p><div id='' class='divImg'></div></div><div id='' class='divRight'><form class='formSendComment' 
+		method='POST' 
+		action='Main?space=userinterface&section=profil#9'><input type='text' 
+		name='sendCommentEditText' 
+		value='' 
+		class='sendCommentEditText' 
+		placeholder='commenter'
+		pattern=
+		required=''/><input type='submit' 
+		name='sendCommentSubmitButton' 
+		value='Go' 
+		class='sendCommentSubmitButton' 
+		placeholder=''
+		pattern=
+		required=''/><input type='hidden' 
+		name='sendCommentHiddenPostId' 
+		value='9' 
+		class='sendCommentHiddenPostId' 
+		placeholder=''
+		pattern=
+		required=''/></form><div id='' class='divCom'></div></div><button id='buttonSuppressPost9' type='button' class='buttonSuppressPost'> suppimer </button><form 
+		id='formSuppressPost9'
+		class='formSuppressPost'
+		method='POST' 
+		action='Main?space=userinterface&section=profil&update=true'><input type='submit' 
+		name='suppressPostSubmitButton' 
+		value='confirmer' 
+		class='suppressPostSubmitButton' 
+		placeholder=''
+		pattern=
+		required=''/><button id='buttonCanceledSuppressPost9' type='button' class='buttonCancelledSuppressPost'> annuler </button><input type='hidden' 
+		name='suppressPostHiddenPostId' 
+		value='9' 
+		class='suppressPostHiddenPostId' 
+		placeholder=''
+		pattern=
+		required=''/></form><script> if(document.getElementById('buttonSuppressPost9').style.visibility != 'hidden')
+{
+	document.getElementById('formSuppressPost9').style.visibility = 'hidden';
+}
+document.getElementById('buttonSuppressPost9').onclick = function(){
+	document.getElementById('buttonSuppressPost9').style.visibility = 'hidden';
+	document.getElementById('formSuppressPost9').style.visibility = 'visible';
+
+}
+document.getElementById('buttonCanceledSuppressPost9').onclick = function(){
+	document.getElementById('buttonSuppressPost9').style.visibility = 'visible';
+	document.getElementById('formSuppressPost9').style.visibility = 'hidden';
+
+} </script></div>

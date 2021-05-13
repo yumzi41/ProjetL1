@@ -51,7 +51,7 @@ class LoginTreatment{
 
 			$callBack = self::login($_POST["loginEmail"], $_POST["loginPassword"], $response);
 				
-				if(!is_null($callBack)){
+				if($callBack){
 
 					header('Location:http://localhost/ProjetL1/PhpFolder/Main.php');
 					die();

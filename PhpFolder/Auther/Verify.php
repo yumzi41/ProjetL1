@@ -67,6 +67,14 @@ class Verify{
 			die();
 		}
 	}
+
+	static function verifUpdateMode(&$default){
+		if(isset($_GET["update"])){
+			if($_GET["update"]=="true"){
+				$default == false;
+			}
+		}
+	}
 }  
 
 ?>

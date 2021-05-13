@@ -3,10 +3,22 @@ namespace Charge;
 
 class ChargePost{
 
+	static function chargePostSection(&$contentUserInterfaceMiddle, $kserver, $userId, int $nbr, $default){
+
+		\Treatment\PostTreatment::treatment();
+
+		\Treatment\CommentTreatment::treatment();
+
+		$contentUserInterfaceMiddle = file_get_contents(\Charge\ChargePost::chargeCacheOrNewPostSection($kserver, 60, $userId, $nbr, $default));
+
+
+	}
 
 	static function chargeCacheOrNewPostSection($kserver, $time, $userId, int $nbr, $default){
 
-		$cache = \Auther\Injection::getCache($kserver, "post" . $userId, $time);
+		\Auther\Verify::verifUpdateMode($default);
+
+		$cache = \Auther\Injection::getCache($kserver, "post.php" . $userId, $time);
 		
 		if($cache->verifyCacheFileExists() && $default){
 
@@ -33,9 +45,13 @@ class ChargePost{
 
 			$order = "SELECT * FROM posts AS p LEFT JOIN users AS u ON (p.fk_user_id = u.user_id) ORDER BY date_publi DESC LIMIT :nbr";
 
+			$action = "Main?space=userinterface&section=actu";
+
 		}else{
 
 			$order = "SELECT * FROM posts AS p LEFT JOIN users AS u ON (p.fk_user_id = u.user_id) WHERE user_id = :user_id ORDER BY date_publi DESC LIMIT :nbr";
+
+			$action = "Main?space=userinterface&section=profil";
 
 		}
 
@@ -48,15 +64,29 @@ class ChargePost{
 				if(!$userId==null){
 
 					$query->bindParam("user_id", $userId, \PDO::PARAM_INT);
-					
 				}
 				
 				$query->execute();
 
 				while($row = $query->fetch()){
+
+
+
 					$date = \Auther\MotorTemplate::cP("date_publi", "Le : " . $row["date_publi"] . ", ");
 					$pseudo = \Auther\MotorTemplate::cP("pseudo", "de : " . $row["pseudo"] . ", ");
 					$title = \Auther\MotorTemplate::cP("title", "intitulé : " . $row["title"] . ".");
+
+					if($row["url_img_profil"]==null || $row["url_img_profil"]==""){
+
+					$imgProfil = \Auther\MotorTemplate::cImage("../Img/avatar.png","imgProfilPost");
+
+					}else{
+
+					$imgProfil = \Auther\MotorTemplate::cImage($row["url_img_profil"],"imgProfilPost");
+
+					}
+
+					$imgProfilP = \Auther\MotorTemplate::cP("imgProfilPostP", $imgProfil);
 					
 					$description = \Auther\MotorTemplate::cP("description", $row["description"]);
 
@@ -65,9 +95,9 @@ class ChargePost{
 
 					$sendCommentHiddenPostId = \Auther\MotorTemplate::cInput("sendCommentHiddenPostId", "hidden", $row['post_id'], "sendCommentHiddenPostId", "", "");
 
-					$formSendComment = \Auther\MotorTemplate::cForm("formSendComment","POST", "#" . $row["post_id"], $sendCommentEditText . $sendCommentSubmitButton . $sendCommentHiddenPostId);
+					$formSendComment = \Auther\MotorTemplate::cForm("formSendComment","POST", $action . "#" . $row["post_id"], $sendCommentEditText . $sendCommentSubmitButton . $sendCommentHiddenPostId);
 					
-					$divHead = \Auther\MotorTemplate::cDiv("", "divHead", $date . $pseudo . $title);
+					$divHead = \Auther\MotorTemplate::cDiv("", "divHead", $imgProfilP . $date . $pseudo . $title);
 					$divImg = \Auther\MotorTemplate::cDiv("", "divImg", self::chargeImgPost($row["post_id"]));
 					$divCom = \Auther\MotorTemplate::cDiv("", "divCom", self::chargeComPost($row["post_id"], 15));
 
@@ -75,8 +105,22 @@ class ChargePost{
 					$divLeft = \Auther\MotorTemplate::cDiv("", "divLeft", $divHead . $description . $divImg);
 					$divRight = \Auther\MotorTemplate::cDiv("", "divRight", $formSendComment . $divCom);
 
-				
-					$divPost = \Auther\MotorTemplate::cDiv($row["post_id"], "divPost", $divLeft . $divRight);
+					$suppress = "";
+					$suppressJs = "";
+
+					if($userId!=null){
+
+						require("HiddenPhp/SuppressPost.php");
+
+						$suppress = \Auther\MotorTemplate::tagReplace("post_id", $row["post_id"], $suppressElements);
+
+						$suppressJs = \Auther\MotorTemplate::cJavascript(
+							\Auther\MotorTemplate::tagReplace("post_id", $row["post_id"], file_get_contents("../JsFolder/SuppressPost.js"))
+						);
+
+					}
+
+					$divPost = \Auther\MotorTemplate::cDiv($row["post_id"], "divPost", $divLeft . $divRight . $suppress . $suppressJs);
 
 					$content = $content . $divPost;
 
@@ -101,8 +145,6 @@ class ChargePost{
 			$query->execute(array("fk_post_id"=>$postId));
 
 				while($row = $query->fetch()){
-
-					//recuperation link img
 
 				}
 				$query->closeCursor();

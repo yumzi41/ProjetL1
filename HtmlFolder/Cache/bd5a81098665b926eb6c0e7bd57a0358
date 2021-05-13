@@ -1,0 +1,15 @@
+<div id='divChat' class='divChat'><div id='divAllMessages' class='divAllMessages'><?= $contentAllMessages ?? ''; ?></div><form class='formSendMessage' 
+		method='POST' 
+		action='http://localhost/ProjetL1/PhpFolder/Main?space=userinterface&section=chat&update=true'><input type='text' 
+		name='sendMessageEditText' 
+		value='' 
+		class='sendMessageEditText' 
+		placeholder='discuter...'
+		patter=^.{1,}$
+		required=''/><input type='submit' 
+		name='sendMessageSubmitButton' 
+		value='Envoyer' 
+		class='sendMessageSubmitButton' 
+		placeholder=''
+		patter=
+		required=''/></form></div>

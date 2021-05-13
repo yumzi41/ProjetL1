@@ -6,7 +6,7 @@ $editProfilName = \Auther\MotorTemplate::cInput("editProfilName","text", $_SESSI
 
 $editProfilPseudo = \Auther\MotorTemplate::cInput("editProfilPseudo","text", $_SESSION["pseudo"],"editProfilPseudo", "Pseudo...", "$.{1,50}^");
 
-$editProfilBiographie = \Auther\MotorTemplate::cTextarea("editProfilBiographie", "editProfilBiographie","Biographie...", "8", "8", "$.{1,250}^", $_SESSION["biographie"]);
+$editProfilBiographie = \Auther\MotorTemplate::cTextarea("editProfilBiographie", "editProfilBiographie","Biographie...", "7", "", "$.{1,250}^", $_SESSION["biographie"]);
 
 $img = \Auther\MotorTemplate::cImage($_SESSION["url_img_profil"], "imgProfil");
 $imgP = \Auther\MotorTemplate::cP("imgP", $img);

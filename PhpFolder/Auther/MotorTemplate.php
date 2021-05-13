@@ -15,13 +15,13 @@ class MotorTemplate{
 		value='{$value}' 
 		class='{$class}' 
 		placeholder='{$placeholder}'
-		patter={$pattern}
+		pattern={$pattern}
 		required=''/>";
 
 	}
 
 	static function cTextarea($class, $name, $placeholder, $rows, $columns, $pattern, $value){
-		return "<textarea class='{$class}' name='{$name}' rows='{$rows} cols='{$columns}' pattern='{$pattern}'></textarea>";
+		return "<textarea class='{$class}' name='{$name}' rows='{$rows}' placeholder='{$placeholder}' cols='{$columns}' pattern='{$pattern}'>{$value}</textarea>";
 	}
 
 	static function cA($class, $href, $value){
@@ -30,6 +30,15 @@ class MotorTemplate{
 
 	static function cForm($class, $method, $action, $element){
 		return "<form class='{$class}' 
+		method='{$method}' 
+		action='{$action}'>" .
+		$element . "</form>";
+	}
+
+	static function cFormWithId($id, $class, $method, $action, $element){
+		return "<form 
+		id='{$id}'
+		class='{$class}'
 		method='{$method}' 
 		action='{$action}'>" .
 		$element . "</form>";
@@ -59,12 +68,16 @@ class MotorTemplate{
 		return "<script> {$script} </script>";
 	}
 
+	static function cChangeStyleJs($id, $style, $value){
+		return "document.getElementById('{$id}').style.{$style} = '{$value}';";
+	}
+
 	static function cOnClick($id, $function){
 		return "document.getElementById('{$id}').onclick = function(){{$function}}";
 	}
 
 	static function cButton($id, $class, $value){
-		return "<button id='{$id}' class='{$class}'> {$value} </button>";
+		return "<button id='{$id}' type='button' class='{$class}'> {$value} </button>";
 	}
 }
 ?>

@@ -2,17 +2,15 @@
 namespace Treatment;
 class ProfilTreatment{
 
-
-
 	static $tabElements = array("Surname", "Name", "Pseudo", "Biographie");
 
 	static $extensionsValid = array("png", "jpeg", "jpg");
 
 	static function verifImgFile($imgFile, &$response){
 
-		$pathImgFile = "";
-
-		if($imgFile["name"] == ""){
+		$pathImgFile = "empty";
+		
+		if($imgFile["name"] == "" || $imgFile["name"] == null){
 
 			return $pathImgFile;
 		}
@@ -43,7 +41,7 @@ class ProfilTreatment{
 
 	static function updateProfil($surname, $name, $pseudo, $biographie, $pathImgFile, &$response){
 
-		if($pathImgFile == ""){
+		if($pathImgFile == "empty"){
 
 			$order1 = "UPDATE users SET pseudo = :pseudo, surname = :surname, name = :name, biographie = :biographie WHERE user_id = :user_id";
 
@@ -130,7 +128,7 @@ class ProfilTreatment{
 					$_SESSION["name"] = $_POST["editProfilName"];
 					$_SESSION["pseudo"] = $_POST["editProfilPseudo"];
 					$_SESSION["biographie"] = $_POST["editProfilBiographie"];
-					if(!$imgFile==""){
+					if($imgFile!="empty"){
 
 						$_SESSION["url_img_profil"] = $imgFile;
 

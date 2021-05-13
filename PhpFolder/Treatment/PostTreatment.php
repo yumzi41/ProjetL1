@@ -28,6 +28,7 @@ class PostTreatment{
 		\Auther\Verify::verifSessionExists();
 
 		if(\Auther\Verify::verifPostElementsExist("newPost", self::$tabElements)){
+			
 			self::insert($_POST["newPostTitle"], 
 				$_POST["newPostDescription"]);
 		}
