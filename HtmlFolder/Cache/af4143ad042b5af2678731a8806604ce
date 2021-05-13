@@ -13,14 +13,14 @@
 		value='' 
 		class='newPostTitle' 
 		placeholder='Titre (max : 25 caractères)'
-		pattern=^.{1,25}$
-		required=''/><textarea class='newPostDescription' name='newPostDescription' rows='' placeholder='Description (max : 450 caractères)' cols='' pattern='^.{1,450}$'></textarea><input type='submit' 
+		pattern='^.{1,25}$'
+		required='true' /><textarea class='newPostDescription' name='newPostDescription' rows='' placeholder='Description (max : 450 caractères)' cols='' pattern='^.{1,450}$'></textarea><input type='submit' 
 		name='newPostSubmitButton' 
 		value='Confirmer' 
-		class='newPostSubmitButton' 
+		class='newPostSubmitButton'
+		pattern='?'
 		placeholder=''
-		pattern=
-		required=''/><button id='buttonInvisibleFormNewPost' type='button' class='buttonInvisibleFormNewPost'> X </button></form></div><button id='buttonVisibleFormNewPost' type='button' class='buttonVisibleFormNewPost'> Nouveau Post </button></div><script> if(document.getElementById('buttonVisibleFormNewPost').style.visibility != "hidden"){
+		/><button id='buttonInvisibleFormNewPost' type='button' class='buttonInvisibleFormNewPost'> X </button></form></div><button id='buttonVisibleFormNewPost' type='button' class='buttonVisibleFormNewPost'> Nouveau Post </button></div><script> if(document.getElementById('buttonVisibleFormNewPost').style.visibility != "hidden"){
 
 	document.getElementById('divFormNewPost').style.visibility = "hidden";
 

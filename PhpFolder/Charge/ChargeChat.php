@@ -1,12 +1,11 @@
 <?php
+// La classe ChargeChat centralise les fonctions qui récuperent les données en rapport avec le chat //
 namespace Charge;
-
 class ChargeChat{
 
-	static function chargeCacheOrNewChatSection(){
-
-	}
-
+	
+	// Dans cette fonction il fallait récupérer une variable lors de l'affichage d'une premiere partie puis récupérer cette partie dans l'affichage d'une seconde partie, c'est pour cela que j'ai utilisé deux mises en mémoire tampon grâce à ob_start et ob_get_clean, enfin on modifie la variable passé en paramêtre pour lui transmettre toutes les données chargées //
+	
 	static function chargeChatSection(&$contentUserInterfaceMiddle, $default, $nbr){
 
 		\Auther\Verify::verifSessionExists();
@@ -19,7 +18,7 @@ class ChargeChat{
 
 		ob_start();
 
-		require(self::chargeCacheOrNewAllMessages($default, $nbr));
+		require(self::chargeCacheOrNewAllMessages($nbr));
 
 		$contentAllMessages = ob_get_clean();
 
@@ -40,7 +39,7 @@ class ChargeChat{
 
 		$contentP = \Auther\MotorTemplate::cP("content", $content);
 
-		if($urlImgProfil==null || $urlImgProfil==""){
+		if($urlImgProfil==null || $urlImgProfil=="" || !file_exists($urlImgProfil)){
 
 			$imgProfil = \Auther\MotorTemplate::cImage("../Img/avatar.png","imgProfil");
 
@@ -111,9 +110,7 @@ class ChargeChat{
 
 	static function chargeCacheOrNewMainDiv($default){
 
-		\Auther\Verify::verifUpdateMode($default);
-
-		$cache = \Auther\Injection::getCache($_SERVER["REQUEST_URI"], "chat.php", 360000);
+		$cache = \Auther\Injection::getCache($_SERVER["REQUEST_URI"], "chat.php", 3600);
 		
 		if($cache->verifyCacheFileExists() && $default){
 
@@ -131,13 +128,11 @@ class ChargeChat{
 
 	}
 
-	static function chargeCacheOrNewAllMessages($default, $nbr){
-
-		\Auther\Verify::verifUpdateMode($default);
+	static function chargeCacheOrNewAllMessages($nbr){
 
 		$cache = \Auther\Injection::getCache($_SERVER["REQUEST_URI"], "AllMessages.php" . $_SESSION["user_id"], 360000);
 		
-		if($cache->verifyCacheFileExists() && $default){
+		if($cache->verifyCacheFileExists() && false){
 
 			return $cache->getPathCache();
 

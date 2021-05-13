@@ -1,5 +1,5 @@
 <?php
-// registerResponse init
+
 			
 		$registerResponse = null;
 

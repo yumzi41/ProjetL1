@@ -3,24 +3,22 @@ namespace Charge;
 
 class ChargePost{
 
-	static function chargePostSection(&$contentUserInterfaceMiddle, $kserver, $userId, int $nbr, $default){
+	static function chargePostSection(&$contentUserInterfaceMiddle, $kserver, $userId, int $nbr){
 
 		\Treatment\PostTreatment::treatment();
 
 		\Treatment\CommentTreatment::treatment();
 
-		$contentUserInterfaceMiddle = file_get_contents(\Charge\ChargePost::chargeCacheOrNewPostSection($kserver, 60, $userId, $nbr, $default));
+		$contentUserInterfaceMiddle = file_get_contents(\Charge\ChargePost::chargeCacheOrNewPostSection($kserver, 60, $userId, $nbr));
 
 
 	}
 
-	static function chargeCacheOrNewPostSection($kserver, $time, $userId, int $nbr, $default){
-
-		\Auther\Verify::verifUpdateMode($default);
+	static function chargeCacheOrNewPostSection($kserver, $time, $userId, int $nbr){
 
 		$cache = \Auther\Injection::getCache($kserver, "post.php" . $userId, $time);
 		
-		if($cache->verifyCacheFileExists() && $default){
+		if($cache->verifyCacheFileExists() && false){
 
 			return $cache->getPathCache();
 
@@ -31,7 +29,6 @@ class ChargePost{
 			$cache->setContent($htmlContent);
 
 			return $cache->getPathCache();
-
 		}
 
 	}
@@ -45,13 +42,13 @@ class ChargePost{
 
 			$order = "SELECT * FROM posts AS p LEFT JOIN users AS u ON (p.fk_user_id = u.user_id) ORDER BY date_publi DESC LIMIT :nbr";
 
-			$action = "Main?space=userinterface&section=actu";
+			$action = "Main?space=userinterface&section=actu&update=true";
 
 		}else{
 
 			$order = "SELECT * FROM posts AS p LEFT JOIN users AS u ON (p.fk_user_id = u.user_id) WHERE user_id = :user_id ORDER BY date_publi DESC LIMIT :nbr";
 
-			$action = "Main?space=userinterface&section=profil";
+			$action = "Main?space=userinterface&section=profil&update=true";
 
 		}
 
@@ -70,13 +67,11 @@ class ChargePost{
 
 				while($row = $query->fetch()){
 
-
-
 					$date = \Auther\MotorTemplate::cP("date_publi", "Le : " . $row["date_publi"] . ", ");
 					$pseudo = \Auther\MotorTemplate::cP("pseudo", "de : " . $row["pseudo"] . ", ");
 					$title = \Auther\MotorTemplate::cP("title", "intitulé : " . $row["title"] . ".");
 
-					if($row["url_img_profil"]==null || $row["url_img_profil"]==""){
+					if($row["url_img_profil"]==null || $row["url_img_profil"]=="" || !file_exists($row["url_img_profil"])){
 
 					$imgProfil = \Auther\MotorTemplate::cImage("../Img/avatar.png","imgProfilPost");
 
@@ -115,8 +110,8 @@ class ChargePost{
 						$suppress = \Auther\MotorTemplate::tagReplace("post_id", $row["post_id"], $suppressElements);
 
 						$suppressJs = \Auther\MotorTemplate::cJavascript(
-							\Auther\MotorTemplate::tagReplace("post_id", $row["post_id"], file_get_contents("../JsFolder/SuppressPost.js"))
-						);
+							\Auther\MotorTemplate::tagReplace("post_id", $row["post_id"],
+							 file_get_contents("../JsFolder/SuppressPost.js")));
 
 					}
 
@@ -160,7 +155,7 @@ class ChargePost{
 
 		$content = "";
 
-		$query = \Database\Db::getInstance()->prepare("SELECT c.content, c.date_publi, u.pseudo FROM comments AS c LEFT JOIN users AS u ON (c.fk_user_id = u.user_id) WHERE c.fk_post_id = :fk_post_id LIMIT :nbr");
+		$query = \Database\Db::getInstance()->prepare("SELECT c.content, u.pseudo, u.url_img_profil FROM comments AS c LEFT JOIN users AS u ON (c.fk_user_id = u.user_id) WHERE c.fk_post_id = :fk_post_id LIMIT :nbr");
 
 		if(!$query==null){
 
@@ -171,14 +166,25 @@ class ChargePost{
 
 				while($row = $query->fetch()){
 
+					if($row["url_img_profil"]==null || $row["url_img_profil"]=="" || !file_exists($row["url_img_profil"])){
 
-					$date = \Auther\MotorTemplate::cP("date", $row["date_publi"]);
+					$imgProfil = \Auther\MotorTemplate::cImage("../Img/avatar.png", "imgProfilComment");
+
+					}else{
+
+					$imgProfil = \Auther\MotorTemplate::cImage($row["url_img_profil"], "imgProfilComment");
+
+					}
+
+					$imgProfilP = \Auther\MotorTemplate::cP("imgProfilCommentP", $imgProfil);
 
 					$pseudo = \Auther\MotorTemplate::cP("pseudo", $row["pseudo"]);
 
 					$text = \Auther\MotorTemplate::cP("text", $row["content"]);
 
-					$content = $content. \Auther\MotorTemplate::cDiv("", "divComment", $pseudo . $date . $text);
+					$divHead = \Auther\MotorTemplate::cDiv("", "divHeadComment", $imgProfilP . $pseudo);
+
+					$content = $content. \Auther\MotorTemplate::cDiv("", "divComment", $divHead. $text);
 
 				}
 				$query->closeCursor();

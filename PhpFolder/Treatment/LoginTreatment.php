@@ -23,7 +23,7 @@ class LoginTreatment{
 					$_SESSION["pseudo"] = $row["pseudo"];
 					$_SESSION["biographie"] = $row["biographie"];
 
-					if($row["url_img_profil"] == null || $row["url_img_profil"] == "" || $row["url_img_profil"] == "NULL" || $row["url_img_profil"] == "null"){
+					if($row["url_img_profil"] == null || $row["url_img_profil"] == "" || $row["url_img_profil"] == "NULL" || $row["url_img_profil"] == "null" || !file_exists($row["url_img_profil"])){
 
 						$_SESSION["url_img_profil"] = "../Img/avatar.png";
 						

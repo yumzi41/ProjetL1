@@ -1,4 +1,7 @@
 <?php
+
+// MotorTemplate permet de transformer le html en programmation orientée objet qui rendra le code bien plus lisible //
+
 namespace Auther;
 class MotorTemplate{
 
@@ -10,15 +13,28 @@ class MotorTemplate{
 	}
 	static function cInput($name, $type, $value, $class, $placeholder, $pattern){
 
+		if($pattern==""|| $pattern==null){
+
+		return "<input type='{$type}' 
+		name='{$name}' 
+		value='{$value}' 
+		class='{$class}'
+		pattern='?'
+		placeholder='{$placeholder}'
+		/>";
+
+
+		}else{
+
 		return "<input type='{$type}' 
 		name='{$name}' 
 		value='{$value}' 
 		class='{$class}' 
 		placeholder='{$placeholder}'
-		pattern={$pattern}
-		required=''/>";
-
+		pattern='{$pattern}'
+		required='true' />";
 	}
+}
 
 	static function cTextarea($class, $name, $placeholder, $rows, $columns, $pattern, $value){
 		return "<textarea class='{$class}' name='{$name}' rows='{$rows}' placeholder='{$placeholder}' cols='{$columns}' pattern='{$pattern}'>{$value}</textarea>";

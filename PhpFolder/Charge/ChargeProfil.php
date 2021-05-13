@@ -5,7 +5,7 @@ class ChargeProfil{
 
 	static $tabElements = array("user_id", "surname", "name", "pseudo", "biographie", "url_img_profil");
 
-	static function chargeProfilSection(&$contentUserInterfaceMiddle, $kserver, $userId, int $nbr, $default){
+	static function chargeProfilSection(&$contentUserInterfaceMiddle, $kserver, $userId, int $nbr){
 
 		$contentUserInterfaceMiddle = null;
 
@@ -22,16 +22,14 @@ class ChargeProfil{
 		ob_start();
 
 		require ChargeProfil::chargeCacheOrNewProfilSection($kserver, 
-			360, $userId, $default);
+			360, $userId);
 
-		require ChargePost::chargeCacheOrNewPostSection($kserver, 60, $userId, $nbr, $default);
+		require ChargePost::chargeCacheOrNewPostSection($kserver, 60, $userId, $nbr);
 
 		$contentUserInterfaceMiddle = ob_get_clean();
 	}
 
-	static function chargeCacheOrNewProfilSection($kserver, $time, $userId, $default){
-
-		\Auther\Verify::verifUpdateMode($default);
+	static function chargeCacheOrNewProfilSection($kserver, $time, $userId){
 		
 		if(isset($_GET["mode"])){
 
@@ -39,7 +37,7 @@ class ChargeProfil{
 
 				$cache = \Auther\Injection::getCache($kserver, "profilEdit" . $userId, 10);
 
-				if($cache->verifyCacheFileExists() && $default){
+				if($cache->verifyCacheFileExists() && false){
 
 				return $cache->getPathCache();
 
@@ -56,7 +54,7 @@ class ChargeProfil{
 		}
 			$cache = \Auther\Injection::getCache($kserver, "profilVisit" . $userId, $time);
 
-			if($cache->verifyCacheFileExists() && $default){
+			if($cache->verifyCacheFileExists() && false){
 
 			return $cache->getPathCache();
 

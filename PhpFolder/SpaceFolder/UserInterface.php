@@ -1,4 +1,6 @@
 <?php
+// Dans cette section, j'ai utilisé les fonctions ob_start et ob_get_clean couplet à des balises <? $variable ?? ''> qui permettent de récupérer $variable si elle existe et de la mettre à la place de la balise correspondante. Cette méthode permet le chargement ou la mise à jour des parties contenant les informations qui changent constamment et permet aussi de ne pas recharger les fichiers html qui ne changeront jamais avec le temps (exemple : l'espace login). 
+//
 
 if(isset($_GET["section"])){
 
@@ -16,13 +18,13 @@ if(isset($_GET["section"])){
 
 	}else{
 
-		\Charge\ChargePost::chargePostSection($contentUserInterfaceMiddle, $_SERVER['REQUEST_URI'], null, 20, $default);
+		\Charge\ChargePost::chargePostSection($contentUserInterfaceMiddle, $_SERVER['REQUEST_URI'], null, 20);
 
 	}
 
 }else{
 
-	\Charge\ChargePost::chargePostSection($contentUserInterfaceMiddle, $_SERVER['REQUEST_URI'], null, 20, $default);
+	\Charge\ChargePost::chargePostSection($contentUserInterfaceMiddle, $_SERVER['REQUEST_URI'], null, 20);
 	
 
 }

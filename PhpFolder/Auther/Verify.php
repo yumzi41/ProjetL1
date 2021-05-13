@@ -1,4 +1,7 @@
 <?php
+
+// Verify permet de vérifier certaines données entrées par l'utilisateur grâce aux Regx mais aussi détecter l'envoie de formulaire et de vérifier si une session est en cours //
+
 namespace Auther;
 class Verify{
 
@@ -68,12 +71,13 @@ class Verify{
 		}
 	}
 
-	static function verifUpdateMode(&$default){
+	static function verifUpdateMode(){
 		if(isset($_GET["update"])){
 			if($_GET["update"]=="true"){
-				$default == false;
+				return false;
 			}
-		}
+		}else
+		return true;
 	}
 }  
 

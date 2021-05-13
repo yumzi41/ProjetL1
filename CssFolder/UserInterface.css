@@ -232,11 +232,18 @@ background : red;
 /* div post right space divComment  -----------------------*/
 
 div.divRight div.divComment {
-display : grid;
-grid-template-areas : " A B" "C C";
+display : flex;
+flex-direction: column;
 border-bottom : 1px dashed black;
 color: black;
-padding : 5px;
+padding : 3px;
+}
+
+div.divRight div.divComment div.divHeadComment {
+	display: flex;
+	flex-direction: row;
+	grid-gap: 5px;
+	align-items: center;
 }
 
 div.divRight div.divComment p.text { 
@@ -248,6 +255,13 @@ overflow-y: visible;
 display: block;
 grid-area: C;
 text-overflow: ellipsis;
+}
+
+div.divRight div.divComment img.imgProfilComment {
+width : 30px;
+height : 30px;
+margin : 3px;
+border-radius: 75px;
 }
 
 /* divPost in divComment, formSendComment  -----------------------*/

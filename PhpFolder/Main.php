@@ -1,9 +1,17 @@
 <?php
+
+/* Main.php est la page constamment chargé lors de chaque requête, elle gérera l'affichage de la page selon les paramêtres passés en GET, j'ai essayé de faire Main.php le  plus lisible possible grâce aux require. */
+
 session_start();
 
 require('Auther/Autoloader.php');
 $a = new Auther\Autoloader();
-$default = false;
+
+/* Autoloader permet de charger les class automatiquement, elle traite aussi la notion de namespace. */
+
+$default = true; 
+
+/* La variable $default est une variable qui premettra de dire si oui ou non il faudra effectuer une récupération dans le cache pour effectuer une affichage. */
 
 if(isset($_SESSION['user_id'])){
 

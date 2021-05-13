@@ -1,4 +1,6 @@
 <?php
+
+// Au départ je pensais que la notion d'injection allait me servir à organiser le code, mais au final elle ne m'a pas servi //
 namespace Auther;
 class Injection{
 

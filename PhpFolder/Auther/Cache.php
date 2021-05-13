@@ -1,4 +1,5 @@
 <?php
+// Cette classe permet de récupérer le cache si il existe. //
 namespace Auther;
 class Cache{
 

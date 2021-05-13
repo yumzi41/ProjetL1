@@ -5,11 +5,11 @@
 		value='' 
 		class='sendMessageEditText' 
 		placeholder='discuter...'
-		patter=^.{1,}$
-		required=''/><input type='submit' 
+		pattern='^.{1,}$'
+		required='true' /><input type='submit' 
 		name='sendMessageSubmitButton' 
 		value='Envoyer' 
-		class='sendMessageSubmitButton' 
+		class='sendMessageSubmitButton'
+		pattern='?'
 		placeholder=''
-		patter=
-		required=''/></form></div>
+		/></form></div>

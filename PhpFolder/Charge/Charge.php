@@ -5,8 +5,6 @@ class Charge{
 
 	static function chargeCacheOrNewWithModel($kserver, $kfileName, $time, $requireFile, $HtmlModel, $title, $css, $default){
 
-		\Auther\Verify::verifUpdateMode($default);
-
 		$cache = \Auther\Injection::getCache($kserver, $kfileName, $time);
 		
 		if($cache->verifyCacheFileExists() && $default){

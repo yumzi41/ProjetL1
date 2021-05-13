@@ -5,32 +5,32 @@
 
 			$surnameEditText = Auther\MotorTemplate::cInput("registerSurname", 
 				"text", 
-				"Noe", 
+				"", 
 				"registerSurnameEditText",
 				"veuillez entrer votre prenom", "");
 
 			$nameEditText = Auther\MotorTemplate::cInput("registerName", 
 				"text", 
-				"Ramanan", 
+				"", 
 				"registerNameEditText",
 				"veuillez entrer votre nom", "");
 
 			$emailEditText = Auther\MotorTemplate::cInput(
 				"registerEmail", 
 				"text", 
-				"slap@gmail.com", 
+				"", 
 				"registeremailEditText",
 				"veuillez entrer votre email", "");
 
 			$pseudoEditText = Auther\MotorTemplate::cInput("registerPseudo", 
 				"text", 
-				"yumzi",
+				"",
 				"registerPseudoEditText",
 				"veuillez entrer votre pseudo", "");
 
 			$passwordEditText = Auther\MotorTemplate::cInput("registerPassword", 
 				"password", 
-				"K2z623pt?", 
+				"", 
 				"registerPasswordEditText","veuillez entrer votre mot de passe", "");
 
 			$passwordConfirmEditText = Auther\MotorTemplate::cInput("registerPasswordConfirm", 

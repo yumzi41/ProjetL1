@@ -15,17 +15,21 @@ class ProfilTreatment{
 			return $pathImgFile;
 		}
 
-		if($imgFile["size"]<=1000000){
+		if($imgFile["size"]<=10000000){
 
 			$fileInfos = pathinfo($imgFile["name"]);
 
 			if(in_array(strtolower($fileInfos["extension"]), self::$extensionsValid)){
 
-				$pathImgFile = "../ImgProfil/" . md5(date('l jS \of F Y h:i:s A')) . $_SESSION["user_id"] .".". $fileInfos["extension"];
+				$pathImgFile = "../ImgProfil/" . md5(date('l jS \of F Y h:i:s A') . $_SESSION["user_id"]) .".".  $fileInfos["extension"];
 
-				move_uploaded_file($imgFile['tmp_name'], $pathImgFile);
+				if(move_uploaded_file($imgFile['tmp_name'], $pathImgFile)){
 
-				return $pathImgFile;
+					return $pathImgFile;
+				}else{
+					$response = \Auther\MotorTemplate::cP("editProfilResponse", "Fichier invalide.");
+					return null;
+				}
 
 			}else{
 
