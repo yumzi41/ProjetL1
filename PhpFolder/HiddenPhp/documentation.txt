@@ -1,0 +1,1 @@
+HiddenPhp regroupe tout le code concernant les balises html, comme ses parties rendent vites illisibles le code, j'ai décidé de les cacher quand cela était possibles. 

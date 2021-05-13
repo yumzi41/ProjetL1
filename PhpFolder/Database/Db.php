@@ -1,4 +1,7 @@
 <?php
+
+// Classe concernant la base de donnée //
+
 namespace Database;
 class Db{
 
@@ -7,6 +10,9 @@ class Db{
 	private static $defaultserver = "localhost";
 	private static $defaultUserPass = "root";
 	private static $defaultPassword = "";
+
+	
+	// initialisation de la base de donnée, j'ai utilisé l'objet PDO car plus facile d'utilisation //
 
 	static function initDb($dbName, $server,$userPass, $password){
 		self::$instanceDb=null;
@@ -20,6 +26,7 @@ class Db{
 			
 		}
 	}
+	// on récupère ici un singleton de la connexion à la base de donné pour optimiser la mémoire utilisée //
 
 	static function getInstance(){
 		if(!self::$instanceDb==null){

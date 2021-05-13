@@ -1,0 +1,1 @@
+SpaceFolder est le prolongements de Main.php afin de le rendre plus lisible.

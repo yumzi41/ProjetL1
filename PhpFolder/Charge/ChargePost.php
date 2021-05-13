@@ -1,7 +1,8 @@
 <?php
+// Même principe que ChargeChat //
 namespace Charge;
-
 class ChargePost{
+
 
 	static function chargePostSection(&$contentUserInterfaceMiddle, $kserver, $userId, int $nbr){
 
@@ -33,6 +34,7 @@ class ChargePost{
 
 	}
 
+	// cette fonction prend en paramêtre userId qui, dans le cas d'un userId null, chargera le fil d'actualité global sinon, seulement les posts associés à l'utilisateur de session pour compléter la section profil //
 
 	static function chargePost($userId, int $nbr){
 
@@ -66,10 +68,13 @@ class ChargePost{
 				$query->execute();
 
 				while($row = $query->fetch()){
+					 // j'aurai aimé dissimuler cette partie du code mais je n'ai pas trouvé le moyen de faire communiquer la variable $row entres plusieurs fichiers php //
 
 					$date = \Auther\MotorTemplate::cP("date_publi", "Le : " . $row["date_publi"] . ", ");
 					$pseudo = \Auther\MotorTemplate::cP("pseudo", "de : " . $row["pseudo"] . ", ");
 					$title = \Auther\MotorTemplate::cP("title", "intitulé : " . $row["title"] . ".");
+
+					// onn vérifie la cohérence de l'url de la photonde profil sinon on affiche celle par défaut //
 
 					if($row["url_img_profil"]==null || $row["url_img_profil"]=="" || !file_exists($row["url_img_profil"])){
 
@@ -103,6 +108,8 @@ class ChargePost{
 					$suppress = "";
 					$suppressJs = "";
 
+					// dans le cas où userId n'est pas null, on ajoutera les êlements qui permettront la suppression d'un post et le Js qui permettra d'avoir des boutons dynamiques //
+
 					if($userId!=null){
 
 						require("HiddenPhp/SuppressPost.php");
@@ -130,6 +137,8 @@ class ChargePost{
 		return $content;
 	}
 
+	// cette fonction ne sera pas utilisée dans le projet //
+
 	static function chargeImgPost($postId){
 
 		$content = "";
@@ -150,6 +159,7 @@ class ChargePost{
 
 	}
 
+	// récupération de tous les commmentaires pour chaque post //
 
 	static function chargeComPost($postId, $nbr){
 

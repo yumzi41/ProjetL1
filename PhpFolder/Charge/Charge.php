@@ -1,6 +1,8 @@
 <?php
-namespace Charge;
 
+// on centralise ici le traitement de récupération du cache ou non //
+
+namespace Charge;
 class Charge{
 
 	static function chargeCacheOrNewWithModel($kserver, $kfileName, $time, $requireFile, $HtmlModel, $title, $css, $default){
@@ -10,8 +12,6 @@ class Charge{
 		if($cache->verifyCacheFileExists() && $default){
 
 			return $cache->getPathCache();
-
-		//login space init
 
 		}else{
 

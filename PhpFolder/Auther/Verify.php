@@ -5,6 +5,8 @@
 namespace Auther;
 class Verify{
 
+	// fonction qui détectera l'envoie de certains élements $_POST prenant en paramêtre une racine et un tableau de string  //
+
 	 static function verifPostElementsExist(String $root, array $tabElements){
 		foreach($tabElements as $e){
 			if(!isset($_POST[$root . $e])){
@@ -63,6 +65,8 @@ class Verify{
 			return false;
 		}
 	}
+
+	// une fonction qui renverra à l'acceuil du site si aucune session n'est détéctée //
 
 	static function verifSessionExists(){
 		if(!isset($_SESSION["user_id"])){

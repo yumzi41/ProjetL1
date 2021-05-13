@@ -1,0 +1,1 @@
+N'étant pas familiarisé avec la partie JavaScript d'un site web, j'ai essayé de centraliser tout ce code dans ce dossier.

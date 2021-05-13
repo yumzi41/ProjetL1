@@ -1,0 +1,1 @@
+Les classes Treatment s'occuperont de traiter les formualires envoyés par l'utilisateurs. Dans l'ensemble elle ont toutes le même fonctionnement. Elles disposent de fonctions qui effectueront des ordres SQL et la fonction .treatment() qui réalisera la verification de l'éxistence des formulaires mais aussi de la session.

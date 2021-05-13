@@ -4,7 +4,7 @@ namespace Charge;
 class ChargeChat{
 
 	
-	// Dans cette fonction il fallait récupérer une variable lors de l'affichage d'une premiere partie puis récupérer cette partie dans l'affichage d'une seconde partie, c'est pour cela que j'ai utilisé deux mises en mémoire tampon grâce à ob_start et ob_get_clean, enfin on modifie la variable passé en paramêtre pour lui transmettre toutes les données chargées //
+	// Dans cette fonction il fallait récupérer une variable lors de l'affichage d'une première partie puis récupérer cette partie dans l'affichage d'une seconde partie, c'est pour cela que j'ai utilisé deux mises en mémoire tampon grâce à ob_start() et ob_get_clean(, enfin on modifie la variable passée en paramêtre pour lui transmettre toutes les données chargées. De plus, j'y ai ajouté les traitements des formulaires qui permettront l'ajout et la suppression de certains messages //
 	
 	static function chargeChatSection(&$contentUserInterfaceMiddle, $default, $nbr){
 
@@ -28,6 +28,7 @@ class ChargeChat{
 
 
 	}
+ 	// Cette fonction chargera chaque message
 
 	static function chargeMessage($userId, $urlImgProfil, $pseudo, $date, $content, $messageId){
 
@@ -76,6 +77,8 @@ class ChargeChat{
 
 	}
 
+	// cette fonction chargera tout les messages avec une limite que l'on pourra fixer suivant les cas //
+
 	static function chargeAllMessages($nbr){
 
 		$content = "";
@@ -108,6 +111,8 @@ class ChargeChat{
 		}
 	}
 
+	// cette fonction charge le div principal de la section chat, comme les composants restent les mêmes, on effectuera une récupération cache //
+
 	static function chargeCacheOrNewMainDiv($default){
 
 		$cache = \Auther\Injection::getCache($_SERVER["REQUEST_URI"], "chat.php", 3600);
@@ -127,6 +132,8 @@ class ChargeChat{
 		}
 
 	}
+
+	// cette fonction sert à récupérer ou non le cache du chat global. Je l'ai désactivé pour toujours réactualiser les messages et éviter des problêmes d'affichages //
 
 	static function chargeCacheOrNewAllMessages($nbr){
 

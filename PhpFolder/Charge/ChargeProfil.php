@@ -1,9 +1,11 @@
 <?php
+// dans l'ensemble, les fonctions de cette classe fonctionnent comme celles documentées précedemment //
 namespace Charge;
-
 class ChargeProfil{
 
 	static $tabElements = array("user_id", "surname", "name", "pseudo", "biographie", "url_img_profil");
+
+	
 
 	static function chargeProfilSection(&$contentUserInterfaceMiddle, $kserver, $userId, int $nbr){
 
@@ -58,8 +60,6 @@ class ChargeProfil{
 
 			return $cache->getPathCache();
 
-			//login space init
-
 			}else{
 
 			$htmlContent = self::ChargeProfilVisit();
@@ -70,6 +70,8 @@ class ChargeProfil{
 			
 		}
 	}
+
+	// Cette fonction récupérera ces données directement dans le tableau $_SESSION fréquemment mis à jour //
 
 	static function ChargeProfilVisit(){
 
@@ -86,6 +88,8 @@ class ChargeProfil{
 				return $content;
 			}
 	}
+
+	// Cette fonction récupérera ces données directement dans le tableau $_SESSION fréquemment mis à jour, après l'envoie et le traitement du formulaire elle les mettra à jour //
 
 	static function chargeProfilEdit(){
 
