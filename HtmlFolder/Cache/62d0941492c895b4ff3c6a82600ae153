@@ -1,0 +1,30 @@
+<div id='divMessage40' class='divPersonnalMessage'><div id='divHead' class='divHead'><p class='imgProfilP'><img src='../Img/avatar.png' class='imgProfil'></p><p class='pseudo'>---vous---</p><p class='date'>Le 2021-05-14 11:01:41</p></div><p class='content'>Coucou les loulous</p><button id='buttonSuppressMessage40' type='button' class='buttonSuppressMessage'> suppimer </button><form 
+		id='formSuppressMessage40'
+		class='formSuppressMessage'
+		method='POST' 
+		action='Main?space=userinterface&section=chat&update=true'><input type='submit' 
+		name='suppressMessageSubmitButton' 
+		value='confirmer' 
+		class='suppressMessageSubmitButton'
+		pattern='?'
+		placeholder=''
+		/><button id='buttonCanceledSuppressMessage40' type='button' class='buttonCancelledSuppressMessage'> annuler </button><input type='hidden' 
+		name='suppressMessageHiddenMessageId' 
+		value='40' 
+		class='suppressMessageHiddenMessageId'
+		pattern='?'
+		placeholder=''
+		/></form><script> if(document.getElementById('buttonSuppressMessage40').style.visibility != 'hidden')
+{
+	document.getElementById('formSuppressMessage40').style.visibility = 'hidden';
+}
+document.getElementById('buttonSuppressMessage40').onclick = function(){
+	document.getElementById('buttonSuppressMessage40').style.visibility = 'hidden';
+	document.getElementById('formSuppressMessage40').style.visibility = 'visible';
+
+}
+document.getElementById('buttonCanceledSuppressMessage40').onclick = function(){
+	document.getElementById('buttonSuppressMessage40').style.visibility = 'visible';
+	document.getElementById('formSuppressMessage40').style.visibility = 'hidden';
+
+} </script></div><div id='divMessage39' class='divMessage'><div id='divHead' class='divHead'><p class='imgProfilP'><img src='../ImgProfil/3ad703c71bfe77c27d43745923f55fd8.jpg' class='imgProfil'></p><p class='pseudo'>lbastien, </p><p class='date'>Le 2021-05-13 23:11:02</p></div><p class='content'>Non tkt mdr je suis la moi</p></div><div id='divMessage38' class='divMessage'><div id='divHead' class='divHead'><p class='imgProfilP'><img src='../ImgProfil/e3793020cfd3ad05551acf1fa50695a0.png' class='imgProfil'></p><p class='pseudo'>yumzi, </p><p class='date'>Le 2021-05-13 22:29:08</p></div><p class='content'>bon je suis solo la mdr</p></div><div id='divMessage37' class='divMessage'><div id='divHead' class='divHead'><p class='imgProfilP'><img src='../ImgProfil/e3793020cfd3ad05551acf1fa50695a0.png' class='imgProfil'></p><p class='pseudo'>yumzi, </p><p class='date'>Le 2021-05-13 22:29:01</p></div><p class='content'>Vous allez bien !!</p></div><div id='divMessage36' class='divMessage'><div id='divHead' class='divHead'><p class='imgProfilP'><img src='../ImgProfil/e3793020cfd3ad05551acf1fa50695a0.png' class='imgProfil'></p><p class='pseudo'>yumzi, </p><p class='date'>Le 2021-05-13 22:28:55</p></div><p class='content'>Bonjour le chat !</p></div>

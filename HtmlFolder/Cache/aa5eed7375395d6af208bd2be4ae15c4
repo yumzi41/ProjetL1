@@ -25,7 +25,7 @@
 		class='editProfilPseudo' 
 		placeholder='Pseudo...'
 		pattern='^.{1,50}$'
-		required='true' /><textarea class='editProfilBiographie' name='editProfilBiographie' rows='7' placeholder='Biographie...' cols='' pattern='^.{1,250}$'>.</textarea><input type='submit' 
+		required='true' /><textarea class='editProfilBiographie' name='editProfilBiographie' rows='7' placeholder='Biographie...' cols='' pattern='^.{1,250}$'>Yo les gars</textarea><input type='submit' 
 		name='editProfilSubmitButton' 
 		value='Confirmer' 
 		class='editProfilSubmitButton'

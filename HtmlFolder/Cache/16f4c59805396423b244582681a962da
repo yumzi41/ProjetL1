@@ -1,0 +1,50 @@
+<div id='58' class='divPost'><div id='' class='divLeft'><div id='' class='divHead'><p class='imgProfilPostP'><img src='../Img/avatar.png' class='imgProfilPost'></p><p class='date_publi'>Le : 2021-05-14 11:02:51, </p><p class='pseudo'>de : visiteur, </p><p class='title'>intitulé : Aide concernant php.</p></div><p class='description'>Yo ! comment on redirige vers une page en php ? je crois c'est header ... et quelque chose après </p><div id='' class='divImg'></div></div><div id='' class='divRight'><form class='formSendComment' 
+		method='POST' 
+		action='Main?space=userinterface&section=profil&update=true#58'><input type='text' 
+		name='sendCommentEditText' 
+		value='' 
+		class='sendCommentEditText'
+		pattern='?'
+		placeholder='commenter'
+		/><input type='submit' 
+		name='sendCommentSubmitButton' 
+		value='Go' 
+		class='sendCommentSubmitButton'
+		pattern='?'
+		placeholder=''
+		/><input type='hidden' 
+		name='sendCommentHiddenPostId' 
+		value='58' 
+		class='sendCommentHiddenPostId'
+		pattern='?'
+		placeholder=''
+		/></form><div id='' class='divCom'></div></div><button id='buttonSuppressPost58' type='button' class='buttonSuppressPost'> suppimer </button><form 
+		id='formSuppressPost58'
+		class='formSuppressPost'
+		method='POST' 
+		action='Main?space=userinterface&section=profil&update=true'><input type='submit' 
+		name='suppressPostSubmitButton' 
+		value='confirmer' 
+		class='suppressPostSubmitButton'
+		pattern='?'
+		placeholder=''
+		/><button id='buttonCanceledSuppressPost58' type='button' class='buttonCancelledSuppressPost'> annuler </button><input type='hidden' 
+		name='suppressPostHiddenPostId' 
+		value='58' 
+		class='suppressPostHiddenPostId'
+		pattern='?'
+		placeholder=''
+		/></form><script> if(document.getElementById('buttonSuppressPost58').style.visibility != 'hidden')
+{
+	document.getElementById('formSuppressPost58').style.visibility = 'hidden';
+}
+document.getElementById('buttonSuppressPost58').onclick = function(){
+	document.getElementById('buttonSuppressPost58').style.visibility = 'hidden';
+	document.getElementById('formSuppressPost58').style.visibility = 'visible';
+
+}
+document.getElementById('buttonCanceledSuppressPost58').onclick = function(){
+	document.getElementById('buttonSuppressPost58').style.visibility = 'visible';
+	document.getElementById('formSuppressPost58').style.visibility = 'hidden';
+
+} </script></div>
