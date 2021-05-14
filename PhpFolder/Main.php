@@ -9,7 +9,7 @@ $a = new Auther\Autoloader();
 
 /* Autoloader permet de charger les class automatiquement, elle traite aussi la notion de namespace. */
 
-$default = false; 
+$default = true; 
 
 /* La variable $default est une variable qui premettra de dire si oui ou non il faudra effectuer une récupération dans le cache pour effectuer une affichage. */
 
